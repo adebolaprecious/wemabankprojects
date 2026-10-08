@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wema Bank</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+
+    <!-- ============================================
+         ROW 1: Logo, primary nav, login button
+         ============================================ -->
+    <div class="topbar">
+      <div class="topbar__inner">
+
+        <a href="/" class="logo" aria-label="Wema Bank home">
+          <span class="logo__mark" aria-hidden="true">
+            <span class="logo__stripe logo__stripe--1"></span>
+            <span class="logo__stripe logo__stripe--2"></span>
+            <span class="logo__stripe logo__stripe--3"></span>
+          </span>
+          <span class="logo__text">WEMA BANK</span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#" class="is-active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Personal</a></li>
+            <li><a href="#">SME</a></li>
+            <li><a href="#">Dangote IPO</a></li>
+            <li><a href="#">ALAT</a></li>
+            <li><a href="#">SARA</a></li>
+            <li><a href="#">Alat Xplore</a></li>
+          </ul>
+        </nav>
+
+        <a href="#" class="btn-login">
+          <svg class="btn-login__icon" viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true">
+            <path d="M12 2a3 3 0 0 0-3 3v3H8a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-1V5a3 3 0 0 0-3-3zm0 2a1 1 0 0 1 1 1v3h-2V5a1 1 0 0 1 1-1z" fill="currentColor"/>
+          </svg>
+          Online Banking Login
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ============================================
+         ROW 2: Secondary nav + search
+         ============================================ -->
+    <div class="subbar">
+      <div class="subbar__inner">
+
+        <nav class="secondary-nav" aria-label="Secondary">
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Investors Relations</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Resource Center</a></li>
+            <li><a href="#">ALAT Evolution</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <button type="button" class="btn-search" aria-label="Search">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+            <path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+
+  </header>
+
+  <!-- ============================================
+       HERO SECTION — 12-slide carousel
+       ============================================ -->
+<!-- Replace your whole <section class="hero"> ... </section> with this.
+     Optional (slide 5 font): add in <head>:
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet"> -->
+<section class="hero" aria-label="Hero banner" aria-roledescription="carousel">
+  <div class="hero__track" id="heroTrack">
+
+    <!-- 1: Celebrating Wema @ 81 (text is baked into the right image) -->
+    <div class="slide slide--1 is-active" data-slide="0">
+      <img class="slide__bg" src="https://wemabank.com/assets/web-bg-NeQw25Yh.jpg" alt="">
+      <div class="slide__row">
+        <img src="https://wemabank.com/assets/web-banner-left-O-e2CFT7.png" alt="Wema Bank headquarters">
+        <img src="https://wemabank.com/assets/web-banner-right-9DPygWl2.png" alt="Celebrating Wema at 81 years. The future of possibilities begins">
+      </div>
+    </div>
+
+    <!-- 2: ALAT Evolution Jingle -->
+    <div class="slide slide--2" data-slide="1">
+      <img class="slide__bg" src="https://wemabank.com/assets/jingle-bg-Db3fxZJc.jpg" alt="">
+      <div class="slide__row">
+        <img src="https://wemabank.com/assets/jingle-left-IREAcANY.png" alt="ALAT app">
+        <img src="https://wemabank.com/assets/jingle-right-H-L727PA.png" alt="ALAT Evolution jingle now live on Spotify">
+      </div>
+    </div>
+
+    <!-- 3: PAPSS -->
+    <div class="slide slide--3" data-slide="2">
+      <div class="slide__bg slide__bg--white"></div>
+      <div class="slide__bg slide__bg--pattern" aria-hidden="true"></div>
+      <img class="slide--3__anniversary" src="https://wemabank.com/assets/logoBig-xk6cO9dH.svg" alt="">
+      <div class="slide__row">
+        <img src="https://wemabank.com/assets/left-side-UDmiWXIW.png" alt="You can do business across Africa like it's next door. PAPSS is now live on ALAT">
+        <img src="https://wemabank.com/assets/right-side-MXbSyWrF.png" alt="">
+      </div>
+    </div>
+
+    <!-- 4: Voice Banking -->
+    <div class="slide slide--4" data-slide="3">
+      <img class="slide__bg" src="https://wemabank.com/assets/background-_1WUwQks.jpeg" alt="">
+      <div class="slide__row">
+        <img src="https://wemabank.com/assets/left-QiYp4zMD.svg" alt="Voice banking, tap and pay, uptime prediction">
+        <img class="slide--4__phone" src="https://wemabank.com/assets/phone-NJqnPSB7.svg" alt="ALAT by Wema">
+        <div class="slide--4__powered">
+          <span>Powered by</span>
+          <img src="https://wemabank.com/assets/wemaFull-55brX0lO.svg" alt="Wema Bank">
+        </div>
+      </div>
+    </div>
+
+    <!-- 5: ALAT Xplore -->
+    <div class="slide slide--5" data-slide="4">
+      <img class="slide__bg" src="https://wemabank.com/assets/bg-wk-lUXns.png" alt="">
+      <div class="slide__row">
+        <img src="https://wemabank.com/assets/left-liCiuubi.png" alt="ALAT Xplore app">
+        <div class="slide--5__content">
+          <h2 class="slide--5__headline">Nigeria&rsquo;s First Licensed<br>Banking App For <b>Teenagers</b></h2>
+          <p class="slide--5__available">AVAILABLE ON</p>
+          <div class="slide--5__stores">
+            <span class="store-badge store-badge--dark">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16.365 1.43c0 1.14-.46 2.1-1.19 2.86-.78.82-2.06 1.46-3.08 1.38-.13-1.1.42-2.25 1.15-2.98.78-.8 2.1-1.4 3.12-1.26zM20.5 17.3c-.58 1.33-.86 1.93-1.6 3.1-1.04 1.65-2.5 3.7-4.33 3.72-1.6.02-2.02-1.04-4.2-1.03-2.18.01-2.65 1.05-4.25 1.03-1.82-.02-3.2-1.87-4.25-3.52C-.7 16.1-.95 10.4 1.2 7.4c1.18-1.67 2.9-2.65 4.5-2.65 1.65 0 2.68 1.08 4.05 1.08 1.32 0 2.14-1.08 4.05-1.08 1.43 0 2.95.78 4.03 2.12-3.55 1.95-2.97 7 .67 8.45z"/></svg>
+              <span><small>Download on the</small>App Store</span>
+            </span>
+            <span class="store-badge store-badge--dark">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M3 2.6c-.4.3-.6.7-.6 1.2v16.4c0 .5.2.9.6 1.2l9.4-9.4-9.4-9.4z"/></svg>
+              <span><small>GET IT ON</small>Google Play</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6: ALATPay -->
+    <div class="slide slide--6" data-slide="5">
+      <div class="slide__bg slide__bg--white"></div>
+      <div class="slide__row">
+        <img src="https://wemabank.com/assets/left-dynFrDfB.png" alt="ALATPay: a world of unlimited payment possibilities">
+        <img src="https://wemabank.com/assets/right-4TPYAjM1.png" alt="ALATPay dashboard">
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="slide slide--7" data-slide="6">
+      <img class="slide__bg" src="https://wemabank.com/assets/slider1-oZWHKR-_.png" alt="">
+      <div class="slide__content">
+        <h2>Rethink<br>Banking, Embrace<br>Convenience</h2>
+        <p>The future of banking is here. We&rsquo;re not just a bank, we&rsquo;re your financial co-pilot, expertly navigating you through the exciting future of money.</p>
+        <a href="#" class="btn-pill">Learn More <span>&rarr;</span></a>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="slide slide--8" data-slide="7">
+      <div class="slide__bg slide__bg--white"></div>
+      <img class="slide__photo" src="https://wemabank.com/assets/slider3-W-kEOp8r.png" alt="">
+      <div class="slide__content">
+        <h2>Join The Next<br>Generation Banking<br>Revolution</h2>
+        <p>The bank where innovation, tech-savvy solutions, and financial freedom collide. Your money, your rules &ndash; let&rsquo;s redefine banking together!</p>
+        <a href="#" class="btn-pill btn-pill--solid">Order Your Card Now <span>&rarr;</span></a>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="slide slide--9" data-slide="8">
+      <img class="slide__bg" src="https://wemabank.com/assets/slider4-zSCWLnzC.png" alt="">
+      <div class="slide__content">
+        <h2>SARA -<br>Customized<br>Solutions For Her</h2>
+        <p>Join the SARA community where financial aspirations come to fruition and discover a personalized touch, offering unique solutions for each woman&rsquo;s individual financial needs.</p>
+        <a href="#" class="btn-pill">Learn More <span>&rarr;</span></a>
+      </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="slide slide--10" data-slide="9">
+      <img class="slide__bg" src="https://wemabank.com/assets/slider5-BLxqxlsr.png" alt="">
+      <div class="slide__content">
+        <h2>We Power Your<br>Ambitions, One<br>Loan At a Time.</h2>
+        <p>From dream to dynasty, we&rsquo;re your launchpad. Our tailored loans and investments fuel your journey, every step of the way brick by entrepreneurial brick.</p>
+        <a href="#" class="btn-pill">Learn More <span>&rarr;</span></a>
+      </div>
+    </div>
+
+    <!-- 11 -->
+    <div class="slide slide--11" data-slide="10">
+      <img class="slide__bg" src="https://wemabank.com/assets/slider6-g2JkCYwx.png" alt="">
+      <div class="slide__content">
+        <h2>Nurturing<br>Smart Money<br>Kids</h2>
+        <p>Empower your child to flourish as a financially savvy hero with our Royal Kiddies Account! This adventure imparts valuable lessons that accumulate into a lifetime of financial confidence.</p>
+        <a href="#" class="btn-pill">Learn More <span>&rarr;</span></a>
+      </div>
+    </div>
+
+    <!-- 12 -->
+    <div class="slide slide--12" data-slide="11">
+      <img class="slide__bg" src="https://wemabank.com/assets/slider7-LsWWyuTO.png" alt="">
+      <div class="slide__content">
+        <h2>At Wema Bank,<br>we redefine work</h2>
+        <p>It&rsquo;s an adventure in a great place where every team member is empowered to thrive, create, and excel, and where innovation thrives.</p>
+        <a href="#" class="btn-pill btn-pill--solid">Learn More <span>&rarr;</span></a>
+      </div>
+    </div>
+
+  </div>
+
+  <button type="button" class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="Previous slide">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button type="button" class="hero__arrow hero__arrow--next" id="heroNext" aria-label="Next slide">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <div class="hero__dots" id="heroDots" role="tablist" aria-label="Slide navigation"></div>
+  <div class="hero__progress"><div class="hero__progress-bar" id="heroProgress"></div></div>
+</section>
+
+<!-- PASTE in index.html: right AFTER the closing </section> of the hero and BEFORE <script src="script.js"> -->
+
+<!-- shared gradient used by the icons below -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFBAF5"/><stop offset="1" stop-color="#D73BC2"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<!-- ============ NEWS TICKER ============ -->
+<div class="news">
+  <span class="news__label">News</span>
+  <div class="news__viewport">
+    <div class="news__track">
+      <span>Wema Bank Announces the 7th Edition of Hackaholics &hellip;Introduces 3 tracks, 7 Verticals, millions of naira in grant prizes</span>
+      <i>|</i>
+      <span>Wema Bank Announces First Pitch Competition for Startups</span>
+      <i>|</i>
+      <!-- duplicate for seamless loop -->
+      <span>Wema Bank Announces the 7th Edition of Hackaholics &hellip;Introduces 3 tracks, 7 Verticals, millions of naira in grant prizes</span>
+      <i>|</i>
+      <span>Wema Bank Announces First Pitch Competition for Startups</span>
+      <i>|</i>
+    </div>
+  </div>
+</div>
+
+<!-- ============ QUICK LINKS ============ -->
+<section class="quick" aria-label="Quick links">
+  <div class="quick__grid">
+
+    <a href="#" class="quick__card">
+      <svg viewBox="0 0 57 56" width="57" height="56" aria-hidden="true"><rect x="10.5" y="11" width="36" height="23.7" fill="url(#pg)"/><path d="M14 45.3 27.9 34.7H14z" fill="#741B66"/><text x="28.5" y="29" font-size="16" font-weight="700" fill="#fff" text-anchor="middle" font-family="Arial">?</text></svg>
+      <span>Help Center</span>
+    </a>
+
+    <a href="#" class="quick__card">
+      <svg viewBox="0 0 57 56" width="57" height="56" aria-hidden="true"><circle cx="36.7" cy="25.2" r="5.2" fill="#BEBEBE"/><path d="M27.2 41.5a9.5 9.5 0 0 1 19.1 0h-5.7a3.8 3.8 0 0 0-7.6 0z" fill="#B62AA6"/><circle cx="22.3" cy="21.6" r="6.6" fill="#D9D9D9"/><path d="M10.3 41.6a12 12 0 0 1 24.1 0h-7.2a4.8 4.8 0 0 0-9.7 0z" fill="url(#pg)"/></svg>
+      <span>Whistle Blower</span>
+    </a>
+
+    <a href="#" class="quick__card">
+      <svg viewBox="0 0 57 56" width="57" height="56" aria-hidden="true"><rect x="19.1" y="10" width="18.4" height="36" rx="1.6" fill="url(#pg)"/><rect x="19.9" y="12.4" width="16.8" height="28.8" fill="#FDD1FC"/><rect x="26.7" y="11.2" width="2.8" height=".4" fill="#741B66"/><circle cx="28.3" cy="43.6" r="1.2" fill="#4D0542"/></svg>
+      <span>Digital Banking</span>
+    </a>
+
+    <a href="#" class="quick__card">
+      <svg viewBox="0 0 57 56" width="57" height="56" aria-hidden="true"><g fill="url(#pg)"><polygon points="28.9,24.7 39.3,30.7 28.9,36.7 18.5,30.7"/><polygon points="28.9,18 39.3,24 28.9,30 18.5,24"/><polygon points="28.9,11 39.3,17 28.9,23 18.5,17"/></g></svg>
+      <span>FAQs</span>
+    </a>
+
+    <a href="#" class="quick__card">
+      <img src="https://wemabank.com/assets/download--LZOt1qw.svg" width="40" height="40" alt="" style="margin:8px 0 4px">
+      <span>Downloads</span>
+    </a>
+
+    <a href="#" class="quick__card">
+      <svg viewBox="0 0 57 56" width="57" height="56" aria-hidden="true"><path d="M43.3 23.7C43.3 31.3 36.9 46 28.9 46S14.5 31.3 14.5 23.7C14.5 16.2 20.9 10 28.9 10s14.4 6.2 14.4 13.7z" fill="url(#pg)"/><circle cx="28.9" cy="23.2" r="4.8" fill="#fff"/></svg>
+      <span>Locate Branch</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- ============ OUR PRODUCTS ============ -->
+<section class="products">
+  <div class="products__deco" aria-hidden="true"></div>
+  <div class="products__inner">
+    <p class="products__eyebrow">Our products</p>
+    <h2 class="products__title">Elevate Your Business</h2>
+    <p class="products__lead">With Wema Bank, you can access a range of financial solutions tailored to your business needs, including loans, investments, and trade finance. Get the resources you need to grow and expand your reach.</p>
+
+    <div class="products__grid">
+
+      <article class="product-card">
+        <svg class="product-card__icon" viewBox="0 0 130 100" aria-hidden="true">
+          <circle cx="82" cy="20" r="14" fill="#d6d6d6"/>
+          <path d="M38 93a42 42 0 0 1 84 0z" fill="#a8319b" transform="translate(-4 4)"/>
+          <rect x="10" y="22" width="82" height="48" rx="5" fill="url(#pg)"/>
+          <rect x="10" y="34" width="82" height="2" fill="none"/>
+          <rect x="18" y="40" width="22" height="2.5" fill="#fff" opacity=".8"/>
+          <rect x="18" y="46" width="22" height="2.5" fill="#fff" opacity=".8"/>
+          <rect x="68" y="50" width="16" height="9" rx="4.5" fill="#fff"/>
+        </svg>
+        <h3>Personal Banking</h3>
+        <p>At Wema Bank, We offer a comprehensive range of personal banking products and services to meet your financial needs.</p>
+        <a href="#" class="product-card__link">Get started <span>&rarr;</span></a>
+      </article>
+
+      <article class="product-card">
+        <img class="product-card__icon" src="https://wemabank.com/assets/businessBankingIcon-_DkoGwIs.svg" alt="">
+        <h3>Business Banking</h3>
+        <p>We empower businesses with a comprehensive range of financial solutions, including loans, investments, and convenient online banking tools, to help them&hellip;</p>
+        <a href="#" class="product-card__link">Get started <span>&rarr;</span></a>
+      </article>
+
+      <article class="product-card">
+        <svg class="product-card__icon" viewBox="0 0 130 100" aria-hidden="true">
+          <circle cx="30" cy="33" r="13" fill="#bdbdbd"/>
+          <circle cx="100" cy="33" r="13" fill="#bdbdbd"/>
+          <path d="M5 93a32 32 0 0 1 32-32h-2a30 30 0 0 0-3 32z" fill="#a8319b"/>
+          <path d="M125 93a32 32 0 0 0-32-32h2a30 30 0 0 1 3 32z" fill="#a8319b"/>
+          <circle cx="65" cy="22" r="19" fill="#d6d6d6"/>
+          <path d="M30 93a35 35 0 0 1 70 0z" fill="#ef7fe6"/>
+        </svg>
+        <h3>Corporate Banking</h3>
+        <p>Our expertise in trade finance and global network also enable businesses to expand beyond borders and reach new markets.</p>
+        <a href="#" class="product-card__link">Get started <span>&rarr;</span></a>
+      </article>
+
+    </div>
+  </div>
+</section>
+<!-- ===================================================================
+ PASTE ORDER (all inside index.html, after the "Elevate Your Business" section):
+ PART A  -> goes INSIDE <div class="products__inner">, right after the first <div class="products__grid">…</div>
+ PART B  -> everything else, pasted after the closing </section> of .products
+ Uses the hidden gradient id="pg" from sections.html (already in your page).
+==================================================================== -->
+
+<!-- ============ PART A: second row of product cards ============ -->
+<div class="products__grid products__grid--row2">
+  <article class="product-card">
+    <img class="product-card__icon" src="https://wemabank.com/assets/loansIcon-YQ1baKiw.svg" alt="">
+    <h3>Loans</h3>
+    <p>Unlock your financial potential with Wema Bank's extensive range of consumer and business loans. Our flexible and personalized loan options support you in achieving your goals.</p>
+    <a href="#" class="product-card__link">Get started <span>&rarr;</span></a>
+  </article>
+
+  <article class="product-card">
+    <svg class="product-card__icon" viewBox="0 0 115 126" aria-hidden="true">
+      <circle cx="57.7" cy="30.5" r="30.5" fill="#cfcfcf"/>
+      <path d="M.7 126a57 57 0 0 1 114.2 0H80.6a22.8 22.8 0 0 0-45.7 0z" fill="#a8319b"/>
+      <circle cx="57.7" cy="66.3" r="19.9" fill="#d9d9d9"/>
+      <path d="M21.7 126a35 35 0 0 1 70 0z" fill="url(#pg)"/>
+    </svg>
+    <h3>Royal Kiddies</h3>
+    <p>Our bespoke children's savings account designed to encourage saving and financial prudence from a young age. While providing parents with a convenient way to manage their child's savings.</p>
+    <a href="#" class="product-card__link">Get started <span>&rarr;</span></a>
+  </article>
+
+  <article class="product-card">
+    <svg class="product-card__icon" viewBox="0 0 140 120" aria-hidden="true">
+      <rect x="4" y="4" width="134" height="114" fill="url(#pg)"/>
+      <rect x="4" y="4" width="134" height="14" fill="#741b66"/>
+      <circle cx="12" cy="11" r="2.5" fill="#e37bd8"/><circle cx="20" cy="11" r="2.5" fill="#e37bd8"/><circle cx="28" cy="11" r="2.5" fill="#e37bd8"/>
+      <rect x="26" y="38" width="90" height="48" fill="#fff" opacity=".2"/>
+      <rect x="42" y="48" width="58" height="5" fill="#fff"/><rect x="42" y="58" width="58" height="5" fill="#fff"/>
+      <rect x="55" y="72" width="30" height="5" rx="2.5" fill="#c21ea8"/>
+      <path d="M108 100v16l4-3 3 6 3-1-3-6 5-1z" fill="#fff" stroke="#222" stroke-width="1.5"/>
+    </svg>
+    <h3>E-Banking</h3>
+    <p>We offer a comprehensive E-banking platform, ALAT, providing a range of convenient and secure ways to manage your finances 24/7, from anywhere in the world.</p>
+    <a href="#" class="product-card__link">Get started <span>&rarr;</span></a>
+  </article>
+</div>
+
+
+<!-- ============ PART B ============ -->
+
+<!-- shared small icons -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-plant" viewBox="0 0 48 48"><path d="M14 26h20l-2.5 14h-15z" fill="url(#pg)"/><path d="M24 26V18" stroke="#c21ea8" stroke-width="2.5"/><path d="M24 20c-1-5-6-6-9-4 1 4 5 6 9 4zM24 18c1-5 6-7 10-5-1 5-6 7-10 5z" fill="none" stroke="#c21ea8" stroke-width="2.5"/></symbol>
+  <symbol id="i-people" viewBox="0 0 48 48"><circle cx="17" cy="19" r="5" fill="#bebebe"/><circle cx="31" cy="19" r="5" fill="#bebebe"/><circle cx="24" cy="16" r="6" fill="#d9d9d9"/><path d="M12 38a12 12 0 0 1 24 0z" fill="url(#pg)"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 48 48"><rect x="11" y="10" width="26" height="28" fill="#fff" stroke="#c21ea8" stroke-width="1.5"/><rect x="14" y="14" width="10" height="2" fill="#c21ea8"/><rect x="14" y="22" width="20" height="3" fill="#ccc"/><rect x="14" y="28" width="20" height="3" fill="#ccc"/></symbol>
+  <symbol id="i-cards" viewBox="0 0 45 34"><rect y=".2" width="33" height="20" rx="3" fill="#981d87"/><rect y="4" width="33" height="5" fill="#d8a0d2"/><rect x="12" y="14" width="33" height="20" rx="3" fill="url(#pg)"/><rect x="12" y="18" width="33" height="5" fill="#a9479d"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 57 56"><rect x="19.1" y="10" width="18.4" height="36" rx="1.6" fill="url(#pg)"/><rect x="19.9" y="12.4" width="16.8" height="28.8" fill="#FDD1FC"/><circle cx="28.3" cy="43.6" r="1.2" fill="#4D0542"/></symbol>
+</svg>
+
+<!-- ---- SME Banking ---- -->
+<section class="band band--dots-l">
+  <div class="split split--media-first">
+    <img class="split__media" src="https://wemabank.com/assets/smeimg-tuUXOvA2.jpg" alt="Two fashion designers at work">
+    <div class="split__text">
+      <img class="split__icon" src="https://wemabank.com/assets/businessBankingIcon-_DkoGwIs.svg" alt="">
+      <p class="eyebrow">SME Banking</p>
+      <h2>Your Strategic SME Partner</h2>
+      <p class="lead">Elevate your Enterprise to new heights with a strategic partner. From strategic insights to cutting-edge tools, we are dedicated to propelling your business forward. Let's venture together towards success!</p>
+      <a href="#" class="btn-pill btn-pill--solid">Learn More <span>&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ---- POS / USSD / SME loans cards ---- -->
+<section class="band band--dots-b">
+  <div class="info-grid">
+    <article class="info-card">
+      <span class="info-card__icon"><img src="https://wemabank.com/assets/businessBankingIcon-_DkoGwIs.svg" alt=""></span>
+      <h3>Wema POS</h3>
+      <p>Your partner in seamless and secure POS experiences that ensure client satisfaction and seamless payment processing.</p>
+    </article>
+    <article class="info-card">
+      <span class="info-card__icon"><svg viewBox="0 0 57 56" width="44" height="44"><use href="#i-phone"/></svg></span>
+      <h3>*945#</h3>
+      <p>Our USSD Code offers a convenient and accessible way to manage your finances on your mobile phone without needing internet access.</p>
+    </article>
+    <article class="info-card">
+      <span class="info-card__icon"><img src="https://wemabank.com/assets/coin-azG3PYTK.svg" alt=""></span>
+      <h3>SME Loans</h3>
+      <p>We offer a variety of SME loan options to help your business grow, each with its own advantages and requirements.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ---- Custom Cards ---- -->
+<section class="band">
+  <div class="split split--text-first">
+    <div class="split__text">
+      <svg class="split__icon" viewBox="0 0 45 34" width="45" height="34" aria-hidden="true"><use href="#i-cards"/></svg>
+      <p class="eyebrow">Custom Cards</p>
+      <h2>Experience Individuality in Every Swipe</h2>
+      <p class="lead">Make your transactions with our exclusive collection of personalized cards, allowing you to express your unique style and preferences in every financial interaction and transaction you make</p>
+      <a href="#" class="btn-pill btn-pill--solid">Learn More <span>&rarr;</span></a>
+    </div>
+    <img class="split__media split__media--free" src="https://wemabank.com/assets/card_gif-zaOYJUr6.gif" alt="Custom ALAT cards">
+  </div>
+</section>
+
+<!-- ---- ALATPay ---- -->
+<section class="band">
+  <div class="split split--media-first split--alatpay">
+    <!-- REPLACE the src below with your ALATPay photo URL (woman with phone mock-up) -->
+    <img class="split__media" src="REPLACE-WITH-ALATPAY-IMAGE-URL" alt="ALATPay merchant">
+    <div class="split__text">
+      <img class="split__icon" src="https://wemabank.com/assets/coin2-oxd8k7oh.svg" alt="">
+      <p class="eyebrow">ALATPay</p>
+      <h2>Your Gateway to Uninterrupted Growth</h2>
+      <p class="lead">ALATpay lets businesses collect payments easily from customers via several methods: cards (local and international), bank transfers, phone, NQR, and a dedicated online storefront for displaying and selling products. It's a one-stop platform for seamless digital payments.</p>
+      <a href="#" class="btn-pill btn-pill--solid">Learn More <span>&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ---- Investor Relations ---- -->
+<section class="investor">
+  <div class="investor__top">
+    <div>
+      <p class="investor__label">Investor Relations</p>
+      <h2>Explore the Latest Stories Shaping Our Financial Landscape</h2>
+      <p class="investor__lead">Be informed about our initiatives, partnerships, and the groundbreaking strides we're making in shaping the future of finance and banking.</p>
+      <dl class="stats">
+        <div><dt id="statDate">2026-10-07</dt><dd>Trade Date</dd></div>
+        <div><dt id="statLast">loading...</dt><dd>Last</dd></div>
+        <div><dt id="statChange">loading...</dt><dd>Change</dd></div>
+        <div><dt>BBB</dt><dd>Our Rating</dd></div>
+      </dl>
+    </div>
+    <img src="https://wemabank.com/assets/investor_img-cbcYPP_A.jpg" alt="Wema Bank professionals shaking hands">
+  </div>
+  <div class="investor__cards">
+    <article><h3>Our Share Price</h3><p>Track the rhythm of our stock through real-time updates, insightful analysis, and historical trends.</p></article>
+    <article><h3>Fixed Income &amp; Ratings</h3><p>Experience stability and confidence through our Fixed Income alternatives and ratings, a testament to the trust we inspire in the industry.</p></article>
+    <article><h3>Events &amp; Presentations</h3><p>Join us at our exclusive events where industry experts, thought leaders, and financial professionals converge to share valuable insights.</p></article>
+  </div>
+</section>
+
+<!-- ---- Sustainability ---- -->
+<section class="band band--soft">
+  <div class="split split--text-first">
+    <div class="split__text">
+      <svg class="split__icon" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true"><use href="#i-plant"/></svg>
+      <p class="eyebrow">Sustainability</p>
+      <h2>Championing Responsible Business for a Sustainable Future</h2>
+      <p class="lead">We are committed to advancing our sustainability initiatives, emphasizing responsible business practices, environmental stewardship, and fostering shared value for our stakeholders</p>
+      <a href="#" class="btn-pill btn-pill--solid">Learn More <span>&rarr;</span></a>
+    </div>
+    <div class="collage">
+      <img class="c1" src="https://wemabank.com/assets/sustainerbility_img_1-ZhLKZPnf.jpg" alt="">
+      <img class="c2" src="https://wemabank.com/assets/sustainability_img_2-YCWDd2oB.jpg" alt="">
+      <img class="c3" src="https://wemabank.com/assets/sustainability_img_3-UKg45R4y.jpg" alt="">
+      <img class="c4" src="https://wemabank.com/assets/sustainerbility_img_4-I1ef5rJb.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="band band--soft band--tight">
+  <div class="info-grid">
+    <article class="info-card">
+      <span class="info-card__icon"><svg viewBox="0 0 48 48" width="40" height="40"><use href="#i-people"/></svg></span>
+      <h3>Partnerships</h3>
+      <p>Fostering collaboration for global and corporate goals through a systemic thinking approach.</p>
+    </article>
+    <article class="info-card">
+      <span class="info-card__icon"><svg viewBox="0 0 48 48" width="40" height="40"><use href="#i-doc"/></svg></span>
+      <h3>Governance &amp; Reporting</h3>
+      <p>Ensuring integrity, accountability and transparency, we communicate and disclose impact consistently to stakeholders</p>
+    </article>
+    <article class="info-card">
+      <span class="info-card__icon"><svg viewBox="0 0 48 48" width="40" height="40"><use href="#i-plant"/></svg></span>
+      <h3>Environmental Footprint</h3>
+      <p>Prioritizing environmental quality sustains the future, creating a conducive environment for stakeholders and generations.</p>
+    </article>
+  </div>
+</section>
+<!-- PASTE in index.html after the Sustainability cards section from sections2.html
+     and BEFORE <script src="script.js">. Needs hidden gradient id="pg" from sections.html. -->
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-apple" viewBox="0 0 24 24"><path fill="currentColor" d="M16.4 1.4c0 1.1-.5 2.1-1.2 2.9-.8.8-2.1 1.5-3.1 1.4-.1-1.1.4-2.3 1.2-3 .8-.8 2.1-1.4 3.1-1.3zM20.5 17.3c-.6 1.3-.9 1.9-1.6 3.1-1 1.6-2.5 3.7-4.3 3.7-1.6 0-2-1-4.2-1-2.2 0-2.7 1-4.3 1-1.8 0-3.2-1.9-4.3-3.5C-.7 16.1-1 10.4 1.2 7.4c1.2-1.7 2.9-2.7 4.5-2.7 1.7 0 2.7 1.1 4.1 1.1 1.3 0 2.1-1.1 4.1-1.1 1.4 0 3 .8 4 2.1-3.5 1.9-3 7 .6 8.5z"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M3 2.6c-.4.3-.6.7-.6 1.2v16.4c0 .5.2.9.6 1.2l9.4-9.4zM15.8 9.3l-2.7-1.5L9.9 12l3.2 4.2 2.7-1.5c1.3-.7 1.3-3.7 0-4.4z"/></symbol>
+</svg>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="band band--tight2">
+  <div class="wrap">
+    <p class="eyebrow">Testimonial</p>
+    <h2 class="sec-title">What Customers Say</h2>
+    <div class="testi">
+      <article class="testi__card"><p>&ldquo;I&rsquo;m grateful for the opportunity; it's not just about the grant, but the potential impact. Almost gave up on my business, but this boost will make a difference.&rdquo;.</p><h3>Loveth Ugwu</h3></article>
+      <article class="testi__card"><p>&ldquo;I&rsquo;m grateful to wema bank for the impact in the Gen Z's, the sound of ALAT competition has given me a greater platform in the music industry&rdquo;.</p><h3>Kareem olatomiwa</h3></article>
+      <article class="testi__card"><p>&ldquo;Thank you immensely from my heart, this vote of support and confidence in my business &lsquo;Jute&rsquo;Ally&rsquo; fuels my determination to bring it to life&rdquo;.</p><h3>Hibaatullahi Adeniyi</h3></article>
+      <article class="testi__card"><p>&ldquo;Thank you Wema Bank for this opportunity. With this grant it serves as a boost to pursue my business goals&rdquo;.</p><h3>Peace Edwins</h3></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOWNLOAD ALAT ============ -->
+<section class="app tex">
+  <div class="app__toggle">
+    <span>Personal Banking</span>
+    <button type="button" class="switch" aria-label="Switch between personal and business banking"><i></i></button>
+    <span class="dim">Business Banking</span>
+  </div>
+  <p class="app__cta">Do you have ALAT? Download Now</p>
+
+  <svg class="app__deco app__deco--burst" viewBox="0 0 94 113" width="94" height="113" aria-hidden="true"><path d="M46.3 25.4 41.5 1M54.7 19l3.1-12.3M54.7 80.3 61.2 112M46.3 90 44.2 103.3M74.2 41.7 93 31.9M22.3 41.7 1 28.4M13 46.6H3M27 71.1 8.8 86.3M76.3 66.2l14.5 7.3M49 41.7l15.3-13.3-4.6 20.8 18.4 5.2-18.4 5.2 4.6 14-13.8-7.3-13.3 18.1 1.6-21.6L13 58.2l21.8-9-4.2-19.7z" fill="none" stroke="#AD1E9B" stroke-width="3"/></svg>
+  <svg class="app__deco app__deco--swoosh" viewBox="0 0 122 111" width="122" height="111" aria-hidden="true"><path d="M119.9 16.5S33.3 59.6 57.8 86.6c16.4 18 61.9 6.2 61.9 6.2L1.4 157.3M119.9 16.5 75.4 1.6M119.9 16.5 105 61.3" fill="none" stroke="#AD1E9B" stroke-width="3"/></svg>
+  <svg class="app__deco app__deco--plane" viewBox="0 0 109 77" width="109" height="77" aria-hidden="true"><path d="M107 3 6 33.4l28.4 8.7M107 3 34.4 42.1M107 3 94.7 64.7l-35-13M107 3 53.4 49.4M34.4 42.1 40.8 73M53.4 49.4 40.8 73M53.4 49.4l6.4 2.3M40.8 73l19-21.3" fill="none" stroke="#AD1E9B" stroke-width="3"/></svg>
+
+  <div class="app__grid">
+    <div class="app__left">
+      <a href="#" class="store"><svg width="22" height="22"><use href="#i-apple"/></svg><span><small>Download on the</small>App Store</span></a>
+      <a href="#" class="store"><svg width="22" height="22"><use href="#i-play"/></svg><span><small>GET IT ON</small>Google Play</span></a>
+    </div>
+    <img class="app__phone" src="https://wemabank.com/assets/alatpersonal-unpi1I04.png" alt="ALAT personal banking app">
+    <div class="app__right">
+      <div class="app__bar"><i></i></div>
+      <p>Simple, Easy and Convenient</p>
+      <a href="#" class="btn-outline">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG ============ -->
+<section class="band band--soft band--blog">
+  <div class="wrap">
+    <p class="eyebrow">Blog</p>
+    <h2 class="sec-title">Announcements &amp; Articles</h2>
+
+    <article class="post post--feature">
+      <img src="https://wemaprodstorage.blob.core.windows.net/blogs/639204169887783782_Media_(1).jpg" alt="Wema Bank and Duplo partnership signing">
+      <div>
+        <p class="post__meta"><span class="tag">Article</span><time>July 23, 2026</time></p>
+        <h3>Wema Bank Partners Duplo to Digitize Financial Operations for Nigerian Businesses</h3>
+        <p class="post__text">Wema Bank, Nigeria's oldest indigenous national bank and pioneer of Africa's first fully digital bank, ALAT, has announced an exclusive partnership with Duplo, a leading financial operations platform for African businesses. The partnership will deliver an integrated financial management solution that helps Nigerian businesses simplify operations, strengthen financial control and scale more efficiently.</p>
+        <a href="#" class="btn-ghost">Read More <span>&rarr;</span></a>
+      </div>
+    </article>
+
+    <div class="post-grid">
+      <article class="post post--card">
+        <img src="https://wemaprodstorage.blob.core.windows.net/blogs/639186693350462914_IMG-20260703-WA0011.jpg" alt="">
+        <p class="post__meta"><span class="tag">Press Release</span><time>July 3, 2026</time></p>
+        <h3>Wema Bank Announces the 7th Edition of Hackaholics &hellip;Introduces 3 tracks, 7 Verticals, millions of naira in grant prizes</h3>
+        <p class="post__text">Wema Bank, Nigeria's oldest indigenous national bank, most innovative and pioneer of Africa's first fully digital bank, has announced the 7th edition of Hackaholics.</p>
+        <a href="#" class="btn-ghost">Read More <span>&rarr;</span></a>
+      </article>
+      <article class="post post--card">
+        <img src="https://wemaprodstorage.blob.core.windows.net/blogs/639186695988593307_Updated..png" alt="">
+        <p class="post__meta"><span class="tag">Article</span><time>July 3, 2026</time></p>
+        <h3>Wema Bank Announces First Pitch Centre for Hackaholics 7.0</h3>
+        <p class="post__text">Following the official announcement of the 7th edition of Hackaholics, Wema Bank has announced University of Yaba as the first pitch centre.</p>
+        <a href="#" class="btn-ghost">Read More <span>&rarr;</span></a>
+      </article>
+      <article class="post post--card">
+        <img src="https://wemaprodstorage.blob.core.windows.net/blogs/639181519971544573_Wema_Bank_SMEs.jpeg" alt="">
+        <p class="post__meta"><span class="tag">Press Release</span><time>June 27, 2026</time></p>
+        <h3>Wema Bank Deepens Commitment to Nigeria's Entrepreneurs as it Marks World MSME Day&hellip;</h3>
+        <p class="post__text">As the world commemorates World MSME Day 2026, Wema Bank has reaffirmed its commitment to supporting micro, small and medium enterprises.</p>
+        <a href="#" class="btn-ghost">Read More <span>&rarr;</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEO ============ -->
+<section class="band band--video">
+  <div class="wrap">
+    <p class="eyebrow">Video</p>
+    <h2 class="sec-title">Building for the future</h2>
+    <div class="video">
+      <!-- To use your real video, delete the .video__fake div and add:
+           <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe> -->
+      <div class="video__fake">
+        <div class="yt"><svg viewBox="0 0 50 36" width="50" height="36"><rect width="50" height="36" rx="10" fill="#f03"/><path d="M20 10v16l14-8z" fill="#fff"/></svg><b>YouTube</b></div>
+        <h4>This video is private</h4>
+        <p>If the owner of this video has granted you access, please sign in.</p>
+        <a href="#">Sign in</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="news-band tex">
+  <div class="news-card">
+    <svg viewBox="0 0 58 38" width="58" height="38" aria-hidden="true"><rect width="58" height="38" fill="url(#pg)"/><path d="M0 0h58L29 22z" fill="#741b66"/></svg>
+    <div class="news-card__text">
+      <h3>Subscribe to our newsletter</h3>
+      <p>Get monthly email updates about the improvements and roadmaps that might change.</p>
+    </div>
+    <div class="news-card__form">
+      <input type="email" placeholder="Enter your email" aria-label="Email address">
+      <button type="button" class="btn-pill btn-pill--solid">Learn More <span>&rarr;</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer tex">
+  <div class="footer__grid">
+    <div class="footer__brand">
+      <img src="https://wemabank.com/assets/wemaFullWhite-Xh_jya1z.svg" alt="Wema Bank" class="footer__logo">
+      <p class="footer__cbn">Licensed by CBN <span class="seal"></span></p>
+      <div class="social">
+        <a href="#" aria-label="Facebook">f</a><a href="#" aria-label="X">&#120143;</a><a href="#" aria-label="Instagram">&#9678;</a><a href="#" aria-label="LinkedIn">in</a>
+      </div>
+      <div class="footer__app">
+        <p>Get ALAT app on</p>
+        <a href="#" class="store"><svg width="22" height="22"><use href="#i-apple"/></svg><span><small>Download on the</small>App Store</span></a>
+        <a href="#" class="store"><svg width="22" height="22"><use href="#i-play"/></svg><span><small>GET IT ON</small>Google Play</span></a>
+      </div>
+      <p class="footer__copy">Wema Bank. All Rights Reserved.</p>
+    </div>
+
+    <nav><h4>Useful Links</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Account ReUp</a></li><li><a href="#">ALAT</a></li><li><a href="#">Business Banking</a></li><li><a href="#">Contact Us</a></li><li><a href="#">Hackaholics</a></li><li><a href="#">Personal Banking</a></li><li><a href="#">Sara</a></li><li><a href="#">Whistle Blower</a></li></ul></nav>
+    <nav><h4>Help &amp; Security</h4><ul><li><a href="#">Bank Safely</a></li><li><a href="#">Business Continuity Policy Statement</a></li><li><a href="#">Card Control</a></li><li><a href="#">Features and Services Offered</a></li><li><a href="#">Information Security</a></li><li><a href="#">Secure your card</a></li><li><a href="#">Shop Safely Online</a></li><li><a href="#">Whistleblowing Policy</a></li></ul></nav>
+    <nav><h4>Policies</h4><ul><li><a href="#">Anti-bribery and Corruption Policy</a></li><li><a href="#">AML/CFT/CPF Policy</a></li><li><a href="#">Cybercrime Prohibition &amp; Prevention Policy</a></li><li><a href="#">Data Protection Policy (NDPA)</a></li><li><a href="#">Fraud Management Policy</a></li><li><a href="#">Information Security Policy</a></li><li><a href="#">Occupational Health and Safety Policy</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Risk Management Policy</a></li><li><a href="#">Sanctions Policy</a></li><li><a href="#">Service Management Policy</a></li></ul></nav>
+
+    <nav><h4>Self Service</h4><ul><li><a href="#">Accessibility</a></li><li><a href="#">Agents</a></li><li><a href="#">ATM's</a></li><li><a href="#">Branches</a></li><li><a href="#">BVN Enrollment</a></li><li><a href="#">Help &amp; Support</a></li></ul></nav>
+    <nav><h4>Financial Information</h4><ul><li><a href="#">Annual Audited Financial Statements</a></li><li><a href="#">Governance and Reporting</a></li><li><a href="#">Insider Trading Policy</a></li><li><a href="#">Rating Report</a></li><li><a href="#">Shareholder Information</a></li></ul></nav>
+    <nav><h4>Contact</h4><ul><li>+234-803-900-3700</li><li>+234-01-277-7700-9</li><li>purpleconnect@wemabank.com</li><li>54 Marina, Lagos Island Lagos State Nigeria</li></ul></nav>
+  </div>
+</footer>
+<p class="legal">Wema Bank Plc. Licensed by the Central Bank of Nigeria.</p>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
