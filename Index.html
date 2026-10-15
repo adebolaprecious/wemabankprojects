@@ -1,686 +1,479 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wema Bank</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wema</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="./style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 <body>
 
-  <header class="site-header">
+<header class="col-12">
+<nav class="first-nav m-auto d-flex justify-content-between align-items-center">
+<img src="https://wemabank.com/assets/wemaFull-55brX0lO.svg" alt="" height="30">
+<ul class="list-unstyled d-lg-flex justify-content-between align-items-center col-5 mt-3 navs d-sm-none">
+<li><a href="" class="text-decoration-none">Home</a></li>
+<li><a href="" class="text-decoration-none">About Us</a></li>
+<li><a href="" class="text-decoration-none">Personal</a></li>
+<li><a href="" class="text-decoration-none">SME</a></li>
+<li><a href="" class="text-decoration-none">Dangote IPO</a></li>
+<li><a href="" class="text-decoration-none">ALAT</a></li>
+<li><a href="" class="text-decoration-none">SARA</a></li>
+<li><a href="" class="text-decoration-none">Alat Xplore</a></li>
+</ul>
+<button class="btn text-light rounded-5 d-sm-none d-lg-flex align-items-center big" type="button"><i class="bi bi-briefcase-fill me-2 text-light"></i>Online Banking Login</button>
 
-    <!-- ============================================
-         ROW 1: Logo, primary nav, login button
-         ============================================ -->
-    <div class="topbar">
-      <div class="topbar__inner">
-
-        <a href="/" class="logo" aria-label="Wema Bank home">
-          <span class="logo__mark" aria-hidden="true">
-            <span class="logo__stripe logo__stripe--1"></span>
-            <span class="logo__stripe logo__stripe--2"></span>
-            <span class="logo__stripe logo__stripe--3"></span>
-          </span>
-          <span class="logo__text">WEMA BANK</span>
-        </a>
-
-        <nav class="primary-nav" aria-label="Primary">
-          <ul>
-            <li><a href="#" class="is-active">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Personal</a></li>
-            <li><a href="#">SME</a></li>
-            <li><a href="#">Dangote IPO</a></li>
-            <li><a href="#">ALAT</a></li>
-            <li><a href="#">SARA</a></li>
-            <li><a href="#">Alat Xplore</a></li>
-          </ul>
-        </nav>
-
-        <a href="#" class="btn-login">
-          <svg class="btn-login__icon" viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true">
-            <path d="M12 2a3 3 0 0 0-3 3v3H8a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-1V5a3 3 0 0 0-3-3zm0 2a1 1 0 0 1 1 1v3h-2V5a1 1 0 0 1 1-1z" fill="currentColor"/>
-          </svg>
-          Online Banking Login
-        </a>
-
-      </div>
-    </div>
-
-    <!-- ============================================
-         ROW 2: Secondary nav + search
-         ============================================ -->
-    <div class="subbar">
-      <div class="subbar__inner">
-
-        <nav class="secondary-nav" aria-label="Secondary">
-          <ul>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Investors Relations</a></li>
-            <li><a href="#">Sustainability</a></li>
-            <li><a href="#">Resource Center</a></li>
-            <li><a href="#">ALAT Evolution</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </nav>
-
-        <button type="button" class="btn-search" aria-label="Search">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true">
-            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
-            <path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-        </button>
-
-      </div>
-    </div>
-
-  </header>
-
-  <!-- ============================================
-       HERO SECTION — 12-slide carousel
-       ============================================ -->
-<!-- Replace your whole <section class="hero"> ... </section> with this.
-     Optional (slide 5 font): add in <head>:
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet"> -->
-<section class="hero" aria-label="Hero banner" aria-roledescription="carousel">
-  <div class="hero__track" id="heroTrack">
-
-    <!-- 1: Celebrating Wema @ 81 (text is baked into the right image) -->
-    <div class="slide slide--1 is-active" data-slide="0">
-      <img class="slide__bg" src="https://wemabank.com/assets/web-bg-NeQw25Yh.jpg" alt="">
-      <div class="slide__row">
-        <img src="https://wemabank.com/assets/web-banner-left-O-e2CFT7.png" alt="Wema Bank headquarters">
-        <img src="https://wemabank.com/assets/web-banner-right-9DPygWl2.png" alt="Celebrating Wema at 81 years. The future of possibilities begins">
-      </div>
-    </div>
-
-    <!-- 2: ALAT Evolution Jingle -->
-    <div class="slide slide--2" data-slide="1">
-      <img class="slide__bg" src="https://wemabank.com/assets/jingle-bg-Db3fxZJc.jpg" alt="">
-      <div class="slide__row">
-        <img src="https://wemabank.com/assets/jingle-left-IREAcANY.png" alt="ALAT app">
-        <img src="https://wemabank.com/assets/jingle-right-H-L727PA.png" alt="ALAT Evolution jingle now live on Spotify">
-      </div>
-    </div>
-
-    <!-- 3: PAPSS -->
-    <div class="slide slide--3" data-slide="2">
-      <div class="slide__bg slide__bg--white"></div>
-      <div class="slide__bg slide__bg--pattern" aria-hidden="true"></div>
-      <img class="slide--3__anniversary" src="https://wemabank.com/assets/logoBig-xk6cO9dH.svg" alt="">
-      <div class="slide__row">
-        <img src="https://wemabank.com/assets/left-side-UDmiWXIW.png" alt="You can do business across Africa like it's next door. PAPSS is now live on ALAT">
-        <img src="https://wemabank.com/assets/right-side-MXbSyWrF.png" alt="">
-      </div>
-    </div>
-
-    <!-- 4: Voice Banking -->
-    <div class="slide slide--4" data-slide="3">
-      <img class="slide__bg" src="https://wemabank.com/assets/background-_1WUwQks.jpeg" alt="">
-      <div class="slide__row">
-        <img src="https://wemabank.com/assets/left-QiYp4zMD.svg" alt="Voice banking, tap and pay, uptime prediction">
-        <img class="slide--4__phone" src="https://wemabank.com/assets/phone-NJqnPSB7.svg" alt="ALAT by Wema">
-        <div class="slide--4__powered">
-          <span>Powered by</span>
-          <img src="https://wemabank.com/assets/wemaFull-55brX0lO.svg" alt="Wema Bank">
-        </div>
-      </div>
-    </div>
-
-    <!-- 5: ALAT Xplore -->
-    <div class="slide slide--5" data-slide="4">
-      <img class="slide__bg" src="https://wemabank.com/assets/bg-wk-lUXns.png" alt="">
-      <div class="slide__row">
-        <img src="https://wemabank.com/assets/left-liCiuubi.png" alt="ALAT Xplore app">
-        <div class="slide--5__content">
-          <h2 class="slide--5__headline">Nigeria&rsquo;s First Licensed<br>Banking App For <b>Teenagers</b></h2>
-          <p class="slide--5__available">AVAILABLE ON</p>
-          <div class="slide--5__stores">
-            <span class="store-badge store-badge--dark">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16.365 1.43c0 1.14-.46 2.1-1.19 2.86-.78.82-2.06 1.46-3.08 1.38-.13-1.1.42-2.25 1.15-2.98.78-.8 2.1-1.4 3.12-1.26zM20.5 17.3c-.58 1.33-.86 1.93-1.6 3.1-1.04 1.65-2.5 3.7-4.33 3.72-1.6.02-2.02-1.04-4.2-1.03-2.18.01-2.65 1.05-4.25 1.03-1.82-.02-3.2-1.87-4.25-3.52C-.7 16.1-.95 10.4 1.2 7.4c1.18-1.67 2.9-2.65 4.5-2.65 1.65 0 2.68 1.08 4.05 1.08 1.32 0 2.14-1.08 4.05-1.08 1.43 0 2.95.78 4.03 2.12-3.55 1.95-2.97 7 .67 8.45z"/></svg>
-              <span><small>Download on the</small>App Store</span>
-            </span>
-            <span class="store-badge store-badge--dark">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M3 2.6c-.4.3-.6.7-.6 1.2v16.4c0 .5.2.9.6 1.2l9.4-9.4-9.4-9.4z"/></svg>
-              <span><small>GET IT ON</small>Google Play</span>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 6: ALATPay -->
-    <div class="slide slide--6" data-slide="5">
-      <div class="slide__bg slide__bg--white"></div>
-      <div class="slide__row">
-        <img src="https://wemabank.com/assets/left-dynFrDfB.png" alt="ALATPay: a world of unlimited payment possibilities">
-        <img src="https://wemabank.com/assets/right-4TPYAjM1.png" alt="ALATPay dashboard">
-      </div>
-    </div>
-
-    <!-- 7 -->
-    <div class="slide slide--7" data-slide="6">
-      <img class="slide__bg" src="https://wemabank.com/assets/slider1-oZWHKR-_.png" alt="">
-      <div class="slide__content">
-        <h2>Rethink<br>Banking, Embrace<br>Convenience</h2>
-        <p>The future of banking is here. We&rsquo;re not just a bank, we&rsquo;re your financial co-pilot, expertly navigating you through the exciting future of money.</p>
-        <a href="#" class="btn-pill">Learn More <span>&rarr;</span></a>
-      </div>
-    </div>
-
-    <!-- 8 -->
-    <div class="slide slide--8" data-slide="7">
-      <div class="slide__bg slide__bg--white"></div>
-      <img class="slide__photo" src="https://wemabank.com/assets/slider3-W-kEOp8r.png" alt="">
-      <div class="slide__content">
-        <h2>Join The Next<br>Generation Banking<br>Revolution</h2>
-        <p>The bank where innovation, tech-savvy solutions, and financial freedom collide. Your money, your rules &ndash; let&rsquo;s redefine banking together!</p>
-        <a href="#" class="btn-pill btn-pill--solid">Order Your Card Now <span>&rarr;</span></a>
-      </div>
-    </div>
-
-    <!-- 9 -->
-    <div class="slide slide--9" data-slide="8">
-      <img class="slide__bg" src="https://wemabank.com/assets/slider4-zSCWLnzC.png" alt="">
-      <div class="slide__content">
-        <h2>SARA -<br>Customized<br>Solutions For Her</h2>
-        <p>Join the SARA community where financial aspirations come to fruition and discover a personalized touch, offering unique solutions for each woman&rsquo;s individual financial needs.</p>
-        <a href="#" class="btn-pill">Learn More <span>&rarr;</span></a>
-      </div>
-    </div>
-
-    <!-- 10 -->
-    <div class="slide slide--10" data-slide="9">
-      <img class="slide__bg" src="https://wemabank.com/assets/slider5-BLxqxlsr.png" alt="">
-      <div class="slide__content">
-        <h2>We Power Your<br>Ambitions, One<br>Loan At a Time.</h2>
-        <p>From dream to dynasty, we&rsquo;re your launchpad. Our tailored loans and investments fuel your journey, every step of the way brick by entrepreneurial brick.</p>
-        <a href="#" class="btn-pill">Learn More <span>&rarr;</span></a>
-      </div>
-    </div>
-
-    <!-- 11 -->
-    <div class="slide slide--11" data-slide="10">
-      <img class="slide__bg" src="https://wemabank.com/assets/slider6-g2JkCYwx.png" alt="">
-      <div class="slide__content">
-        <h2>Nurturing<br>Smart Money<br>Kids</h2>
-        <p>Empower your child to flourish as a financially savvy hero with our Royal Kiddies Account! This adventure imparts valuable lessons that accumulate into a lifetime of financial confidence.</p>
-        <a href="#" class="btn-pill">Learn More <span>&rarr;</span></a>
-      </div>
-    </div>
-
-    <!-- 12 -->
-    <div class="slide slide--12" data-slide="11">
-      <img class="slide__bg" src="https://wemabank.com/assets/slider7-LsWWyuTO.png" alt="">
-      <div class="slide__content">
-        <h2>At Wema Bank,<br>we redefine work</h2>
-        <p>It&rsquo;s an adventure in a great place where every team member is empowered to thrive, create, and excel, and where innovation thrives.</p>
-        <a href="#" class="btn-pill btn-pill--solid">Learn More <span>&rarr;</span></a>
-      </div>
-    </div>
-
-  </div>
-
-  <button type="button" class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="Previous slide">
-    <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </button>
-  <button type="button" class="hero__arrow hero__arrow--next" id="heroNext" aria-label="Next slide">
-    <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </button>
-  <div class="hero__dots" id="heroDots" role="tablist" aria-label="Slide navigation"></div>
-  <div class="hero__progress"><div class="hero__progress-bar" id="heroProgress"></div></div>
-</section>
-
-<!-- PASTE in index.html: right AFTER the closing </section> of the hero and BEFORE <script src="script.js"> -->
-
-<!-- shared gradient used by the icons below -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#FFBAF5"/><stop offset="1" stop-color="#D73BC2"/>
-    </linearGradient>
-  </defs>
-</svg>
-
-<!-- ============ NEWS TICKER ============ -->
-<div class="news">
-  <span class="news__label">News</span>
-  <div class="news__viewport">
-    <div class="news__track">
-      <span>Wema Bank Announces the 7th Edition of Hackaholics &hellip;Introduces 3 tracks, 7 Verticals, millions of naira in grant prizes</span>
-      <i>|</i>
-      <span>Wema Bank Announces First Pitch Competition for Startups</span>
-      <i>|</i>
-      <!-- duplicate for seamless loop -->
-      <span>Wema Bank Announces the 7th Edition of Hackaholics &hellip;Introduces 3 tracks, 7 Verticals, millions of naira in grant prizes</span>
-      <i>|</i>
-      <span>Wema Bank Announces First Pitch Competition for Startups</span>
-      <i>|</i>
-    </div>
-  </div>
+<div class="justify-content-between small-option d-sm-flex d-lg-none">
+<button class="btn text-light rounded-5 d-flex align-items-center" type="button"><i class="bi bi-briefcase-fill me-2 text-light small"></i>Login</button>
+<i class="bi bi-search border border-1 py-1 px-2 rounded-circle bg-light"></i>
+<i class="bi bi-list border border-1 py-1 px-2 rounded-circle"></i>
 </div>
 
-<!-- ============ QUICK LINKS ============ -->
-<section class="quick" aria-label="Quick links">
-  <div class="quick__grid">
+</nav>
 
-    <a href="#" class="quick__card">
-      <svg viewBox="0 0 57 56" width="57" height="56" aria-hidden="true"><rect x="10.5" y="11" width="36" height="23.7" fill="url(#pg)"/><path d="M14 45.3 27.9 34.7H14z" fill="#741B66"/><text x="28.5" y="29" font-size="16" font-weight="700" fill="#fff" text-anchor="middle" font-family="Arial">?</text></svg>
-      <span>Help Center</span>
-    </a>
+<div class="col-12 navs d-lg-block d-sm-none">
+<nav class="second-nav col-9 m-auto d-flex justify-content-between align-items-center">
+<ul class="list-unstyled d-flex justify-content-between align-items-center col-8 mt-3">
+<li class="careers position-relative"><a href="" class="nav-link text-decoration-none ">Career</a>
+<ul class="dropdowns dropdowns-1 list-unstyled text-nowrap position-absolute d-none flex-column py-4">
+<li><a href="" class="text-decoration-none">Why Join Wema Bank</a></li>
+<li><a href="" class="text-decoration-none">Our Recruitment Process</a></li>
+<li><a href="" class="text-decoration-none">Career Opportunities</a></li>
+<li><a href="" class="text-decoration-none">Purple Academy</a></li>
+</ul>
+</li>
+<li class="investor position-relative"><a href="" class="nav-link text-decoration-none">Investors Relations</a>
+<ul class="dropdowns dropdowns-2 list-unstyled text-nowrap position-absolute d-none flex-column py-4">
+<li><a href="" class="text-decoration-none">Annual General Meeting</a></li>
+<li><a href="" class="text-decoration-none">Cooperate Governance</a></li>
+<li><a href="" class="text-decoration-none">Financial Information</a></li>
+<li><a href="" class="text-decoration-none">Rating Report</a></li>
+<li><a href="" class="text-decoration-none">Sharehoder Information</a></li>
+<li><a href="" class="text-decoration-none">Event and Presentation</a></li>
+</ul>
+</li>
+<li class="sustainability position-relative"><a href="" class="nav-link text-decoration-none">Sustainability</a>
+<ul class="dropdowns dropdowns-3 list-unstyled text-nowrap position-absolute d-none flex-column py-4">
+<li><a href="" class="text-decoration-none">Corperate Social Investment</a></li>
+<li><a href="" class="text-decoration-none">Employee Engagement and Development</a></li>
+<li><a href="" class="text-decoration-none">Environmental Footprint</a></li>
+<li><a href="" class="text-decoration-none">Partnerships</a></li>
+<li><a href="" class="text-decoration-none">Governance and Reporting</a></li>
+<li><a href="" class="text-decoration-none">Gallery</a></li>
+</ul>
+</li>
+<li class="resource position-relative"><a href="" class="nav-link text-decoration-none">Resources Center</a>
+<ul class="dropdowns dropdowns-4 list-unstyled text-nowrap position-absolute d-none flex-column py-4">
+<li><a href="" class="text-decoration-none">Bank Verification Number - Code To Check Your BVN</a></li>
+<li><a href="" class="text-decoration-none">Loan Rate Calculators - Mortgage, Car Loan or Any Loan</a></li>
+<li><a href="" class="text-decoration-none">Downloads</a></li>
+<li><a href="" class="text-decoration-none">Manuals</a></li>
+<li><a href="" class="text-decoration-none">Videos</a></li>
+<li><a href="" class="text-decoration-none">FAQ</a></li>
+</ul>
+</li>
+<li><a href="" class="nav-link text-decoration-none">ALAT Evolution</a></li>
+<li><a href="" class="nav-link text-decoration-none">Contact Us</a></li>
+</ul>
 
-    <a href="#" class="quick__card">
-      <svg viewBox="0 0 57 56" width="57" height="56" aria-hidden="true"><circle cx="36.7" cy="25.2" r="5.2" fill="#BEBEBE"/><path d="M27.2 41.5a9.5 9.5 0 0 1 19.1 0h-5.7a3.8 3.8 0 0 0-7.6 0z" fill="#B62AA6"/><circle cx="22.3" cy="21.6" r="6.6" fill="#D9D9D9"/><path d="M10.3 41.6a12 12 0 0 1 24.1 0h-7.2a4.8 4.8 0 0 0-9.7 0z" fill="url(#pg)"/></svg>
-      <span>Whistle Blower</span>
-    </a>
+<i class="bi bi-search nav-search text-light p-1 px-2 rounded-circle"></i>
+</nav>
+</div>
 
-    <a href="#" class="quick__card">
-      <svg viewBox="0 0 57 56" width="57" height="56" aria-hidden="true"><rect x="19.1" y="10" width="18.4" height="36" rx="1.6" fill="url(#pg)"/><rect x="19.9" y="12.4" width="16.8" height="28.8" fill="#FDD1FC"/><rect x="26.7" y="11.2" width="2.8" height=".4" fill="#741B66"/><circle cx="28.3" cy="43.6" r="1.2" fill="#4D0542"/></svg>
-      <span>Digital Banking</span>
-    </a>
+</header>
 
-    <a href="#" class="quick__card">
-      <svg viewBox="0 0 57 56" width="57" height="56" aria-hidden="true"><g fill="url(#pg)"><polygon points="28.9,24.7 39.3,30.7 28.9,36.7 18.5,30.7"/><polygon points="28.9,18 39.3,24 28.9,30 18.5,24"/><polygon points="28.9,11 39.3,17 28.9,23 18.5,17"/></g></svg>
-      <span>FAQs</span>
-    </a>
 
-    <a href="#" class="quick__card">
-      <img src="https://wemabank.com/assets/download--LZOt1qw.svg" width="40" height="40" alt="" style="margin:8px 0 4px">
-      <span>Downloads</span>
-    </a>
+<section>
 
-    <a href="#" class="quick__card">
-      <svg viewBox="0 0 57 56" width="57" height="56" aria-hidden="true"><path d="M43.3 23.7C43.3 31.3 36.9 46 28.9 46S14.5 31.3 14.5 23.7C14.5 16.2 20.9 10 28.9 10s14.4 6.2 14.4 13.7z" fill="url(#pg)"/><circle cx="28.9" cy="23.2" r="4.8" fill="#fff"/></svg>
-      <span>Locate Branch</span>
-    </a>
+<i class="bi bi-chat-left-dots-fill rounded-circle text-light"></i>
 
-  </div>
-</section>
 
-<!-- ============ OUR PRODUCTS ============ -->
-<section class="products">
-  <div class="products__deco" aria-hidden="true"></div>
-  <div class="products__inner">
-    <p class="products__eyebrow">Our products</p>
-    <h2 class="products__title">Elevate Your Business</h2>
-    <p class="products__lead">With Wema Bank, you can access a range of financial solutions tailored to your business needs, including loans, investments, and trade finance. Get the resources you need to grow and expand your reach.</p>
+<div class="splide col-12 carousel slide z-0 first-slide" data-bs-interval="5000" data-bs-ride="carousel" role="group" aria-label="Splide Basic HTML Example" id="slide1">
+<div class="splide__track carrol">
+<ul class="splide__list">
+<li class="splide__slide splide1">
+<div class="m-auto col-10 break">
+<img src="https://wemabank.com/assets/web-banner-left-O-e2CFT7.png" alt="" class="object-fit-contain" height="500">
+<img src="https://wemabank.com/assets/web-banner-right-9DPygWl2.png" alt="">
+</div>
+</li>
+<li class="splide__slide splide2">
+<div class="col-10 m-auto break">
+<img src="https://wemabank.com/assets/jingle-left-IREAcANY.png" alt="" height="550">
+<img src="https://wemabank.com/assets/jingle-right-H-L727PA.png" alt="">
+</div>
 
-    <div class="products__grid">
+</li>
+<li class="splide__slide splide3">
+<div class="m-auto col-10 break">
+<img src="https://wemabank.com/assets/left-side-UDmiWXIW.png" alt="" height="600" class="object-fit-contain">
+<img src="https://wemabank.com/assets/right-side-MXbSyWrF.png" alt="" class="object-fit-contain">
+</div>
+</li>
+<li class="splide__slide splide4">
+<div class="d-flex justify-content-between align-items-center col-11 m-auto break">
+<img src="https://wemabank.com/assets/left-QiYp4zMD.svg" alt="" height="300">
+<img src="https://wemabank.com/assets/phone-NJqnPSB7.svg" alt="" height="500" class="mt-5">
+<img src="https://wemabank.com/assets/poweredbyWema-hvXUufkH.svg" alt="" height="200">
+</div>
+</li>
+<li class="splide__slide splide5">
+<div class="mb-5 col-11 ms-5 break">
+<img src="https://wemabank.com/assets/left-liCiuubi.png" alt="" height="550">
+<img src="https://wemabank.com/assets/right-R4e9FON1.png" alt="" height="550">
+</div>
+</li>
+<li class="splide__slide splide6">
+<div class="col-10 m-auto d-flex justify-content-between align-items-center break">
+<img src="https://wemabank.com/assets/right-4TPYAjM1.png" alt="" height="600">
+<img src="https://wemabank.com/assets/left-dynFrDfB.png" alt="" height="600">
+</div>
+</li>
+<li class="splide__slide splide7">
+<div class="d-flex align-items-center justify-content-center col-10 m-auto break">
+<div class="col-6 text-light">
+<h1>Rethink Banking, Enbrace Convinience</h1>
+<p>The future of banking is here. We're not just a bank, we're your financial co-pilot, expertly navigating you through the exciting future of money</p>
+<button class="btn rounded-5 d-flex align-items-center p-3 gap-1">Learn More<i class="bi bi-arrow-right-short"></i></button>
+</div>
+<img src="https://wemabank.com/assets/slider1-oZWHKR-_.png" height="600" alt="">
+</div>
+</li>
 
-      <article class="product-card">
-        <svg class="product-card__icon" viewBox="0 0 130 100" aria-hidden="true">
-          <circle cx="82" cy="20" r="14" fill="#d6d6d6"/>
-          <path d="M38 93a42 42 0 0 1 84 0z" fill="#a8319b" transform="translate(-4 4)"/>
-          <rect x="10" y="22" width="82" height="48" rx="5" fill="url(#pg)"/>
-          <rect x="10" y="34" width="82" height="2" fill="none"/>
-          <rect x="18" y="40" width="22" height="2.5" fill="#fff" opacity=".8"/>
-          <rect x="18" y="46" width="22" height="2.5" fill="#fff" opacity=".8"/>
-          <rect x="68" y="50" width="16" height="9" rx="4.5" fill="#fff"/>
-        </svg>
-        <h3>Personal Banking</h3>
-        <p>At Wema Bank, We offer a comprehensive range of personal banking products and services to meet your financial needs.</p>
-        <a href="#" class="product-card__link">Get started <span>&rarr;</span></a>
-      </article>
+<li class="splide__slide splide8">
+<div class="d-flex align-items-center justify-content-center col-8 m-auto break">
+<div class="col-6 text-dark break">
+<h1>Join The Next Generation Banking Revolution</h1>
+<p>The bank where innovation, tech-savvy solutions, and financial freedom collide. Your money, your rules-let's redefine banking together</p>
+<button class="btn rounded-5 d-flex align-items-center p-3 gap-1 ">Order Your Card Now<i class="bi bi-arrow-right-short"></i></button>
+</div>
+<img src="https://wemabank.com/assets/slider3-W-kEOp8r.png" alt="" height="600" class="object-fit-cover">
+</div>
+</li>
 
-      <article class="product-card">
-        <img class="product-card__icon" src="https://wemabank.com/assets/businessBankingIcon-_DkoGwIs.svg" alt="">
-        <h3>Business Banking</h3>
-        <p>We empower businesses with a comprehensive range of financial solutions, including loans, investments, and convenient online banking tools, to help them&hellip;</p>
-        <a href="#" class="product-card__link">Get started <span>&rarr;</span></a>
-      </article>
+<li class="splide__slide splide9">
+<div class="d-flex align-items-center justify-content-center col-10 m-auto break">
+<div class="col-5 text-light">
+<h1 class="col-10">SARA - Customize Solution For Her</h1>
+<p>Join the SARA community where financial aspirations come to fruition and discover a personalized touch, offering unique solutions for each woman's individual financial needs</p>
+<button class="btn rounded-5 d-flex align-items-center p-3 gap-1">Learn More<i class="bi bi-arrow-right-short"></i></button>
+</div>
+<img src="https://wemabank.com/assets/slider4-zSCWLnzC.png" alt="">
+</div>
+</li>
 
-      <article class="product-card">
-        <svg class="product-card__icon" viewBox="0 0 130 100" aria-hidden="true">
-          <circle cx="30" cy="33" r="13" fill="#bdbdbd"/>
-          <circle cx="100" cy="33" r="13" fill="#bdbdbd"/>
-          <path d="M5 93a32 32 0 0 1 32-32h-2a30 30 0 0 0-3 32z" fill="#a8319b"/>
-          <path d="M125 93a32 32 0 0 0-32-32h2a30 30 0 0 1 3 32z" fill="#a8319b"/>
-          <circle cx="65" cy="22" r="19" fill="#d6d6d6"/>
-          <path d="M30 93a35 35 0 0 1 70 0z" fill="#ef7fe6"/>
-        </svg>
-        <h3>Corporate Banking</h3>
-        <p>Our expertise in trade finance and global network also enable businesses to expand beyond borders and reach new markets.</p>
-        <a href="#" class="product-card__link">Get started <span>&rarr;</span></a>
-      </article>
+<li class="splide__slide splide10">
+<div class="d-flex align-items-center justify-content-center col-11 m-auto break">
+<div class="col-5 text-light">
+<h1>We Empower Your Ambitions, One Loan At a Time</h1>
+<p>From dream dynasty, we're lunchpad. Our tailored loans and investments fuel your journey, every step of the way brick by enterprenuerial brick</p>
+<button class="btn rounded-5 d-flex align-items-center p-3 gap-1">Learn More<i class="bi bi-arrow-right-short"></i></button>
+</div>
+<img src="https://wemabank.com/assets/slider5-BLxqxlsr.png" alt="" height="600">
+</div>
+</li>
 
-    </div>
-  </div>
-</section>
-<!-- ===================================================================
- PASTE ORDER (all inside index.html, after the "Elevate Your Business" section):
- PART A  -> goes INSIDE <div class="products__inner">, right after the first <div class="products__grid">…</div>
- PART B  -> everything else, pasted after the closing </section> of .products
- Uses the hidden gradient id="pg" from sections.html (already in your page).
-==================================================================== -->
+<li class="splide__slide splide12">
+<div class="d-flex align-items-center mt-5 justify-content-center col-11 m-auto break">
+<div class="col-5 text-dark">
+<h1>At Wema Bank, redefine work</h1>
+<p>It's an adventure in a great place where every team member is empower to thrive, create, and excel, and where innovation thrives</p>
+<button class="btn rounded-5 d-flex align-items-center p-3 gap-1">Learn More<i class="bi bi-arrow-right-short"></i></button>
+</div>
+<img src="https://wemabank.com/assets/slider7-LsWWyuTO.png" alt="" height="500">
+</div>
+</li>
 
-<!-- ============ PART A: second row of product cards ============ -->
-<div class="products__grid products__grid--row2">
-  <article class="product-card">
-    <img class="product-card__icon" src="https://wemabank.com/assets/loansIcon-YQ1baKiw.svg" alt="">
-    <h3>Loans</h3>
-    <p>Unlock your financial potential with Wema Bank's extensive range of consumer and business loans. Our flexible and personalized loan options support you in achieving your goals.</p>
-    <a href="#" class="product-card__link">Get started <span>&rarr;</span></a>
-  </article>
-
-  <article class="product-card">
-    <svg class="product-card__icon" viewBox="0 0 115 126" aria-hidden="true">
-      <circle cx="57.7" cy="30.5" r="30.5" fill="#cfcfcf"/>
-      <path d="M.7 126a57 57 0 0 1 114.2 0H80.6a22.8 22.8 0 0 0-45.7 0z" fill="#a8319b"/>
-      <circle cx="57.7" cy="66.3" r="19.9" fill="#d9d9d9"/>
-      <path d="M21.7 126a35 35 0 0 1 70 0z" fill="url(#pg)"/>
-    </svg>
-    <h3>Royal Kiddies</h3>
-    <p>Our bespoke children's savings account designed to encourage saving and financial prudence from a young age. While providing parents with a convenient way to manage their child's savings.</p>
-    <a href="#" class="product-card__link">Get started <span>&rarr;</span></a>
-  </article>
-
-  <article class="product-card">
-    <svg class="product-card__icon" viewBox="0 0 140 120" aria-hidden="true">
-      <rect x="4" y="4" width="134" height="114" fill="url(#pg)"/>
-      <rect x="4" y="4" width="134" height="14" fill="#741b66"/>
-      <circle cx="12" cy="11" r="2.5" fill="#e37bd8"/><circle cx="20" cy="11" r="2.5" fill="#e37bd8"/><circle cx="28" cy="11" r="2.5" fill="#e37bd8"/>
-      <rect x="26" y="38" width="90" height="48" fill="#fff" opacity=".2"/>
-      <rect x="42" y="48" width="58" height="5" fill="#fff"/><rect x="42" y="58" width="58" height="5" fill="#fff"/>
-      <rect x="55" y="72" width="30" height="5" rx="2.5" fill="#c21ea8"/>
-      <path d="M108 100v16l4-3 3 6 3-1-3-6 5-1z" fill="#fff" stroke="#222" stroke-width="1.5"/>
-    </svg>
-    <h3>E-Banking</h3>
-    <p>We offer a comprehensive E-banking platform, ALAT, providing a range of convenient and secure ways to manage your finances 24/7, from anywhere in the world.</p>
-    <a href="#" class="product-card__link">Get started <span>&rarr;</span></a>
-  </article>
+</ul>
+</div>
 </div>
 
 
-<!-- ============ PART B ============ -->
+<div class="scroll position-relative d-flex">
+<div class="news position-absolute start-0 d-flex align-items-center justify-content-center z-1">
+<p class="fw-bold m-0 text-light">News</p>
+</div>
+<div class="d-flex align-items-center fw-semibold z-0">
+<p class="text-nowrap text-light m-0">Wema Bank Announces the 7th Edition of Hackaholics …Introduces 3 tracks, 7 Verticals, millions of naira in grant prizes <span class="px-5">|</span> Wema Bank Announces First Pitch Centre for Hackaholics 7.0 <span class="px-5">|</span> Wema Bank Deepens Commitment to Nigeria's Entrepreneurs as it Marks World MSME Day 2026 <span class="px-5">|</span></p>
+</div>
+</div>
 
-<!-- shared small icons -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-plant" viewBox="0 0 48 48"><path d="M14 26h20l-2.5 14h-15z" fill="url(#pg)"/><path d="M24 26V18" stroke="#c21ea8" stroke-width="2.5"/><path d="M24 20c-1-5-6-6-9-4 1 4 5 6 9 4zM24 18c1-5 6-7 10-5-1 5-6 7-10 5z" fill="none" stroke="#c21ea8" stroke-width="2.5"/></symbol>
-  <symbol id="i-people" viewBox="0 0 48 48"><circle cx="17" cy="19" r="5" fill="#bebebe"/><circle cx="31" cy="19" r="5" fill="#bebebe"/><circle cx="24" cy="16" r="6" fill="#d9d9d9"/><path d="M12 38a12 12 0 0 1 24 0z" fill="url(#pg)"/></symbol>
-  <symbol id="i-doc" viewBox="0 0 48 48"><rect x="11" y="10" width="26" height="28" fill="#fff" stroke="#c21ea8" stroke-width="1.5"/><rect x="14" y="14" width="10" height="2" fill="#c21ea8"/><rect x="14" y="22" width="20" height="3" fill="#ccc"/><rect x="14" y="28" width="20" height="3" fill="#ccc"/></symbol>
-  <symbol id="i-cards" viewBox="0 0 45 34"><rect y=".2" width="33" height="20" rx="3" fill="#981d87"/><rect y="4" width="33" height="5" fill="#d8a0d2"/><rect x="12" y="14" width="33" height="20" rx="3" fill="url(#pg)"/><rect x="12" y="18" width="33" height="5" fill="#a9479d"/></symbol>
-  <symbol id="i-phone" viewBox="0 0 57 56"><rect x="19.1" y="10" width="18.4" height="36" rx="1.6" fill="url(#pg)"/><rect x="19.9" y="12.4" width="16.8" height="28.8" fill="#FDD1FC"/><circle cx="28.3" cy="43.6" r="1.2" fill="#4D0542"/></symbol>
-</svg>
 
-<!-- ---- SME Banking ---- -->
-<section class="band band--dots-l">
-  <div class="split split--media-first">
-    <img class="split__media" src="https://wemabank.com/assets/smeimg-tuUXOvA2.jpg" alt="Two fashion designers at work">
-    <div class="split__text">
-      <img class="split__icon" src="https://wemabank.com/assets/businessBankingIcon-_DkoGwIs.svg" alt="">
-      <p class="eyebrow">SME Banking</p>
-      <h2>Your Strategic SME Partner</h2>
-      <p class="lead">Elevate your Enterprise to new heights with a strategic partner. From strategic insights to cutting-edge tools, we are dedicated to propelling your business forward. Let's venture together towards success!</p>
-      <a href="#" class="btn-pill btn-pill--solid">Learn More <span>&rarr;</span></a>
-    </div>
-  </div>
-</section>
+<div class="boxes col-12 d-flex align-items-center">
+<div class="box m-auto d-grid col-10">
+<div class="boxx boxx1">
+<img src="data:image/svg+xml,%3csvg%20width='57'%20height='56'%20viewBox='0%200%2057%2056'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Frame%202147223344'%3e%3cg%20id='Group%201000005036'%3e%3crect%20id='Rectangle%20496'%20x='10.5'%20y='11'%20width='36'%20height='23.6571'%20fill='url(%23paint0_linear_1164_10734)'/%3e%3cpath%20id='Polygon%2020'%20d='M14.0347%2045.2621L27.9026%2034.6572L14.0347%2034.6572L14.0347%2045.2621Z'%20fill='%23741B66'/%3e%3cpath%20id='?%27%20d=%27M26.7853%2024.8528V24.7139C26.7853%2024.1074%2026.841%2023.6351%2026.9525%2023.2971C27.0639%2022.9545%2027.2241%2022.6837%2027.4331%2022.4846C27.6467%2022.2855%2027.902%2022.0933%2028.1992%2021.9081C28.5103%2021.7183%2028.768%2021.4984%2028.9723%2021.2484C29.1812%2020.9937%2029.2857%2020.6881%2029.2857%2020.3316C29.2857%2020.0677%2029.223%2019.8385%2029.0977%2019.6441C28.9769%2019.4496%2028.8098%2019.2992%2028.5962%2019.1927C28.3826%2019.0815%2028.1481%2019.026%2027.8927%2019.026C27.6559%2019.026%2027.4284%2019.0769%2027.2102%2019.1788C26.9966%2019.2806%2026.8178%2019.4334%2026.6739%2019.6371C26.5346%2019.8409%2026.4557%2020.1025%2026.4371%2020.4219H24.6401C24.6541%2019.783%2024.8073%2019.2482%2025.0998%2018.8176C25.397%2018.3871%2025.7893%2018.0653%2026.2769%2017.8523C26.7691%2017.6347%2027.3077%2017.5259%2027.8927%2017.5259C28.5428%2017.5259%2029.1139%2017.6393%2029.6061%2017.8662C30.0983%2018.093%2030.4814%2018.4148%2030.7553%2018.8315C31.0293%2019.2436%2031.1662%2019.7321%2031.1662%2020.2969C31.1662%2020.8803%2031.0293%2021.3711%2030.7553%2021.7692C30.486%2022.1628%2030.1192%2022.4985%2029.6549%2022.7763C29.3809%2022.9429%2029.1557%2023.1073%2028.9793%2023.2693C28.8028%2023.4314%2028.6728%2023.6235%2028.5892%2023.8458C28.5057%2024.068%2028.4639%2024.3574%2028.4639%2024.7139V24.8528H26.7853ZM27.635%2028.1308C27.3054%2028.1308%2027.0314%2028.0289%2026.8132%2027.8252C26.5996%2027.6169%2026.4928%2027.353%2026.4928%2027.0335C26.4928%2026.7094%2026.5996%2026.4455%2026.8132%2026.2418C27.0314%2026.0334%2027.3054%2025.9293%2027.635%2025.9293C27.9694%2025.9293%2028.2433%2026.0334%2028.4569%2026.2418C28.6705%2026.4455%2028.7773%2026.7094%2028.7773%2027.0335C28.7773%2027.353%2028.6705%2027.6169%2028.4569%2027.8252C28.2433%2028.0289%2027.9694%2028.1308%2027.635%2028.1308Z%27%20fill=%27white%27/%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id=%27paint0_linear_1164_10734%27%20x1=%2710.5%27%20y1=%2713.7723%27%20x2=%2727.5821%27%20y2=%2742.0163%27%20gradientUnits=%27userSpaceOnUse%27%3e%3cstop%20stop-color=%27%23FFBAF5%27/%3e%3cstop%20offset=%270.986917%27%20stop-color=%27%23D73BC2%27/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="">
+<p>Help Center</p>
+</div>
+<div class="boxx boxx2">
+<img src="data:image/svg+xml,%3csvg%20width='57'%20height='56'%20viewBox='0%200%2057%2056'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Whistle%20Blower'%3e%3cg%20id='Group%201000005037'%3e%3cg%20id='Group%201000004978'%3e%3cpath%20id='Ellipse%20116'%20d='M46.3008%2041.49C46.3008%2040.1956%2046.0538%2038.9139%2045.5739%2037.718C45.0941%2036.5222%2044.3907%2035.4356%2043.504%2034.5203C42.6174%2033.605%2041.5647%2032.8789%2040.4062%2032.3836C39.2477%2031.8883%2038.006%2031.6333%2036.7521%2031.6333C35.4981%2031.6333%2034.2564%2031.8883%2033.0979%2032.3836C31.9394%2032.8789%2030.8868%2033.605%2030.0001%2034.5203C29.1134%2035.4356%2028.4101%2036.5222%2027.9302%2037.718C27.4504%2038.9139%2027.2034%2040.1956%2027.2034%2041.49L32.9326%2041.49C32.9326%2040.9723%2033.0314%2040.4596%2033.2233%2039.9812C33.4153%2039.5029%2033.6966%2039.0682%2034.0513%2038.7021C34.406%2038.336%2034.827%2038.0456%2035.2904%2037.8475C35.7538%2037.6493%2036.2505%2037.5473%2036.7521%2037.5473C37.2537%2037.5473%2037.7503%2037.6493%2038.2137%2037.8475C38.6771%2038.0456%2039.0982%2038.336%2039.4529%2038.7021C39.8075%2039.0682%2040.0889%2039.5029%2040.2808%2039.9812C40.4728%2040.4596%2040.5716%2040.9723%2040.5716%2041.49H46.3008Z'%20fill='url(%23paint0_linear_1164_10741)'/%3e%3cellipse%20id='Ellipse%20115'%20cx='5.23639'%20cy='5.23639'%20rx='5.23639'%20ry='5.23639'%20transform='matrix(-1%200%200%201%2041.9895%2019.9277)'%20fill='%23BEBEBE'/%3e%3c/g%3e%3cg%20id='Group%201000004992'%3e%3cellipse%20id='Ellipse%20115_2'%20cx='22.3325'%20cy='21.6'%20rx='6.59785'%20ry='6.6'%20fill='%23D9D9D9'/%3e%3cpath%20id='Ellipse%20116_2'%20d='M34.3628%2041.5853C34.3628%2039.9798%2034.0516%2038.3901%2033.447%2036.9068C32.8423%2035.4236%2031.9561%2034.0758%2030.8389%2032.9406C29.7217%2031.8054%2028.3953%2030.9049%2026.9356%2030.2905C25.4759%2029.6761%2023.9114%2029.3599%2022.3314%2029.3599C20.7514%2029.3599%2019.1869%2029.6761%2017.7272%2030.2905C16.2675%2030.9049%2014.9412%2031.8054%2013.824%2032.9406C12.7067%2034.0758%2011.8205%2035.4236%2011.2159%2036.9068C10.6112%2038.3901%2010.3%2039.9798%2010.3%2041.5853L17.5189%2041.5853C17.5189%2040.9431%2017.6434%2040.3072%2017.8852%2039.7139C18.1271%2039.1206%2018.4816%2038.5815%2018.9284%2038.1274C19.3753%2037.6733%2019.9059%2037.3131%2020.4897%2037.0674C21.0736%2036.8216%2021.6994%2036.6951%2022.3314%2036.6951C22.9634%2036.6951%2023.5892%2036.8216%2024.1731%2037.0674C24.757%2037.3131%2025.2875%2037.6733%2025.7344%2038.1274C26.1813%2038.5815%2026.5358%2039.1206%2026.7776%2039.7139C27.0195%2040.3072%2027.144%2040.9431%2027.144%2041.5853H34.3628Z'%20fill='url(%23paint1_linear_1164_10741)'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_1164_10741'%20x1='33.9799'%20y1='32.8654'%20x2='46.3008'%20y2='41.49'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23981D87'/%3e%3cstop%20offset='1'%20stop-color='%23E93DD0'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_1164_10741'%20x1='10.3'%20y1='30.7925'%20x2='17.9491'%20y2='47.1506'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFBAF5'/%3e%3cstop%20offset='0.986917'%20stop-color='%23D73BC2'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="">
+<p>Whistle Blower</p>
+</div>
+<div class="boxx boxx3">
+<img src="data:image/svg+xml,%3csvg%20width='57'%20height='56'%20viewBox='0%200%2057%2056'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Mobile%20Banking'%3e%3cg%20id='Group%201000005038'%3e%3cpath%20id='Rectangle%204337'%20d='M19.1%2011.6C19.1%2010.7163%2019.8163%2010%2020.7%2010H35.9C36.7836%2010%2037.5%2010.7163%2037.5%2011.6V44.4C37.5%2045.2837%2036.7836%2046%2035.9%2046H20.7C19.8163%2046%2019.1%2045.2837%2019.1%2044.4V11.6Z'%20fill='url(%23paint0_linear_1164_10751)'/%3e%3cpath%20id='Rectangle%204338'%20d='M19.9014%2012.4005H36.7011V41.2001H19.9014V12.4005Z'%20fill='%23FDD1FC'/%3e%3crect%20id='Rectangle%20531'%20x='26.7023'%20y='11.2003'%20width='2.79926'%20height='0.399895'%20rx='0.199947'%20fill='%23741B66'/%3e%3cellipse%20id='Ellipse%20118'%20cx='28.3009'%20cy='43.6015'%20rx='1.19968'%20ry='1.19968'%20fill='%234D0542'/%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_1164_10751'%20x1='19.1'%20y1='14.2187'%20x2='44.0154'%20y2='28.0553'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFBAF5'/%3e%3cstop%20offset='0.986917'%20stop-color='%23D73BC2'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="">
+<p>Digital Banking</p>
+</div>
+<div class="boxx boxx4">
+<img src="data:image/svg+xml,%3csvg%20width='57'%20height='56'%20viewBox='0%200%2057%2056'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Resource%20Center'%3e%3cg%20id='Group%201000005039'%3e%3crect%20id='Rectangle%20498'%20width='20.7844'%20height='20.7844'%20transform='matrix(0.866025%200.5%20-0.866025%200.5%2028.9001%2024.7329)'%20fill='url(%23paint0_linear_1164_10759)'/%3e%3crect%20id='Rectangle%20497'%20width='20.7844'%20height='20.7844'%20transform='matrix(0.866025%200.5%20-0.866025%200.5%2028.9001%2017.9727)'%20fill='url(%23paint1_linear_1164_10759)'/%3e%3crect%20id='Rectangle%20496'%20width='20.7844'%20height='20.7844'%20transform='matrix(0.866025%200.5%20-0.866025%200.5%2028.9001%2011)'%20fill='url(%23paint2_linear_1164_10759)'/%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_1164_10759'%20x1='3.03512e-07'%20y1='2.43567'%20x2='16.8873'%20y2='20.7844'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFBAF5'/%3e%3cstop%20offset='0.986917'%20stop-color='%23D73BC2'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_1164_10759'%20x1='3.03512e-07'%20y1='2.43567'%20x2='16.8873'%20y2='20.7844'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFBAF5'/%3e%3cstop%20offset='0.986917'%20stop-color='%23D73BC2'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint2_linear_1164_10759'%20x1='3.03512e-07'%20y1='2.43567'%20x2='16.8873'%20y2='20.7844'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFBAF5'/%3e%3cstop%20offset='0.986917'%20stop-color='%23D73BC2'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="">
+<p>FAQs</p>
+</div>
+<div class="boxx boxx5">
+<img src="https://wemabank.com/assets/download--LZOt1qw.svg" alt="">
+<p>Downloads</p>
+</div>
+<div class="boxx boxx6">
+<img src="data:image/svg+xml,%3csvg%20width='57'%20height='56'%20viewBox='0%200%2057%2056'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Location'%3e%3cg%20id='Group%201000005041'%3e%3cpath%20id='Ellipse%20121'%20d='M43.3%2023.7405C43.3%2031.3291%2036.8529%2046%2028.9%2046C20.9471%2046%2014.5%2031.3291%2014.5%2023.7405C14.5%2016.1518%2020.9471%2010%2028.9%2010C36.8529%2010%2043.3%2016.1518%2043.3%2023.7405Z'%20fill='url(%23paint0_linear_1164_10775)'/%3e%3cellipse%20id='Ellipse%20122'%20cx='28.9001'%20cy='23.2'%20rx='4.8'%20ry='4.8'%20fill='white'/%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_1164_10775'%20x1='14.5'%20y1='14.2187'%20x2='39.6516'%20y2='39.3326'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFBAF5'/%3e%3cstop%20offset='0.986917'%20stop-color='%23D73BC2'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="">
+<p>Locate Branch</p>
+</div>
 
-<!-- ---- POS / USSD / SME loans cards ---- -->
-<section class="band band--dots-b">
-  <div class="info-grid">
-    <article class="info-card">
-      <span class="info-card__icon"><img src="https://wemabank.com/assets/businessBankingIcon-_DkoGwIs.svg" alt=""></span>
-      <h3>Wema POS</h3>
-      <p>Your partner in seamless and secure POS experiences that ensure client satisfaction and seamless payment processing.</p>
-    </article>
-    <article class="info-card">
-      <span class="info-card__icon"><svg viewBox="0 0 57 56" width="44" height="44"><use href="#i-phone"/></svg></span>
-      <h3>*945#</h3>
-      <p>Our USSD Code offers a convenient and accessible way to manage your finances on your mobile phone without needing internet access.</p>
-    </article>
-    <article class="info-card">
-      <span class="info-card__icon"><img src="https://wemabank.com/assets/coin-azG3PYTK.svg" alt=""></span>
-      <h3>SME Loans</h3>
-      <p>We offer a variety of SME loan options to help your business grow, each with its own advantages and requirements.</p>
-    </article>
-  </div>
-</section>
+</div>
+</div>
 
-<!-- ---- Custom Cards ---- -->
-<section class="band">
-  <div class="split split--text-first">
-    <div class="split__text">
-      <svg class="split__icon" viewBox="0 0 45 34" width="45" height="34" aria-hidden="true"><use href="#i-cards"/></svg>
-      <p class="eyebrow">Custom Cards</p>
-      <h2>Experience Individuality in Every Swipe</h2>
-      <p class="lead">Make your transactions with our exclusive collection of personalized cards, allowing you to express your unique style and preferences in every financial interaction and transaction you make</p>
-      <a href="#" class="btn-pill btn-pill--solid">Learn More <span>&rarr;</span></a>
-    </div>
-    <img class="split__media split__media--free" src="https://wemabank.com/assets/card_gif-zaOYJUr6.gif" alt="Custom ALAT cards">
-  </div>
-</section>
 
-<!-- ---- ALATPay ---- -->
-<section class="band">
-  <div class="split split--media-first split--alatpay">
-    <!-- REPLACE the src below with your ALATPay photo URL (woman with phone mock-up) -->
-    <img class="split__media" src="REPLACE-WITH-ALATPAY-IMAGE-URL" alt="ALATPay merchant">
-    <div class="split__text">
-      <img class="split__icon" src="https://wemabank.com/assets/coin2-oxd8k7oh.svg" alt="">
-      <p class="eyebrow">ALATPay</p>
-      <h2>Your Gateway to Uninterrupted Growth</h2>
-      <p class="lead">ALATpay lets businesses collect payments easily from customers via several methods: cards (local and international), bank transfers, phone, NQR, and a dedicated online storefront for displaying and selling products. It's a one-stop platform for seamless digital payments.</p>
-      <a href="#" class="btn-pill btn-pill--solid">Learn More <span>&rarr;</span></a>
-    </div>
-  </div>
-</section>
 
-<!-- ---- Investor Relations ---- -->
-<section class="investor">
-  <div class="investor__top">
-    <div>
-      <p class="investor__label">Investor Relations</p>
-      <h2>Explore the Latest Stories Shaping Our Financial Landscape</h2>
-      <p class="investor__lead">Be informed about our initiatives, partnerships, and the groundbreaking strides we're making in shaping the future of finance and banking.</p>
-      <dl class="stats">
-        <div><dt id="statDate">2026-10-07</dt><dd>Trade Date</dd></div>
-        <div><dt id="statLast">loading...</dt><dd>Last</dd></div>
-        <div><dt id="statChange">loading...</dt><dd>Change</dd></div>
-        <div><dt>BBB</dt><dd>Our Rating</dd></div>
-      </dl>
-    </div>
-    <img src="https://wemabank.com/assets/investor_img-cbcYPP_A.jpg" alt="Wema Bank professionals shaking hands">
-  </div>
-  <div class="investor__cards">
-    <article><h3>Our Share Price</h3><p>Track the rhythm of our stock through real-time updates, insightful analysis, and historical trends.</p></article>
-    <article><h3>Fixed Income &amp; Ratings</h3><p>Experience stability and confidence through our Fixed Income alternatives and ratings, a testament to the trust we inspire in the industry.</p></article>
-    <article><h3>Events &amp; Presentations</h3><p>Join us at our exclusive events where industry experts, thought leaders, and financial professionals converge to share valuable insights.</p></article>
-  </div>
-</section>
+<div class="elevate d-flex justify-content-between m-auto col-10">
+<div class="col-6 mt-5">
+<p>Our products</p>
+<h2 class="fw-semibold">Elevate Your Business</h2>
+<p>With Wema Bank, you can access a range of financial solutions tailored to your business needs, including loans, investments, and trade finance. Get the resources you need to grow and expand your reach.</p>
+</div>
+<div>
+<img src="data:image/svg+xml,%3csvg%20width='434'%20height='234'%20viewBox='0%200%20434%20234'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20y='110.848'%20width='110.848'%20height='110.848'%20fill='%23FAF0F9'%20fill-opacity='0.7'/%3e%3crect%20x='110.848'%20width='110.848'%20height='110.848'%20fill='%23FAF0F9'%20fill-opacity='0.7'/%3e%3crect%20x='323.151'%20y='123.061'%20width='110.848'%20height='110.848'%20fill='%23FAF0F9'%20fill-opacity='0.7'/%3e%3c/svg%3e" alt="">
+</div>
+</div>
 
-<!-- ---- Sustainability ---- -->
-<section class="band band--soft">
-  <div class="split split--text-first">
-    <div class="split__text">
-      <svg class="split__icon" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true"><use href="#i-plant"/></svg>
-      <p class="eyebrow">Sustainability</p>
-      <h2>Championing Responsible Business for a Sustainable Future</h2>
-      <p class="lead">We are committed to advancing our sustainability initiatives, emphasizing responsible business practices, environmental stewardship, and fostering shared value for our stakeholders</p>
-      <a href="#" class="btn-pill btn-pill--solid">Learn More <span>&rarr;</span></a>
-    </div>
-    <div class="collage">
-      <img class="c1" src="https://wemabank.com/assets/sustainerbility_img_1-ZhLKZPnf.jpg" alt="">
-      <img class="c2" src="https://wemabank.com/assets/sustainability_img_2-YCWDd2oB.jpg" alt="">
-      <img class="c3" src="https://wemabank.com/assets/sustainability_img_3-UKg45R4y.jpg" alt="">
-      <img class="c4" src="https://wemabank.com/assets/sustainerbility_img_4-I1ef5rJb.jpg" alt="">
-    </div>
-  </div>
-</section>
 
-<section class="band band--soft band--tight">
-  <div class="info-grid">
-    <article class="info-card">
-      <span class="info-card__icon"><svg viewBox="0 0 48 48" width="40" height="40"><use href="#i-people"/></svg></span>
-      <h3>Partnerships</h3>
-      <p>Fostering collaboration for global and corporate goals through a systemic thinking approach.</p>
-    </article>
-    <article class="info-card">
-      <span class="info-card__icon"><svg viewBox="0 0 48 48" width="40" height="40"><use href="#i-doc"/></svg></span>
-      <h3>Governance &amp; Reporting</h3>
-      <p>Ensuring integrity, accountability and transparency, we communicate and disclose impact consistently to stakeholders</p>
-    </article>
-    <article class="info-card">
-      <span class="info-card__icon"><svg viewBox="0 0 48 48" width="40" height="40"><use href="#i-plant"/></svg></span>
-      <h3>Environmental Footprint</h3>
-      <p>Prioritizing environmental quality sustains the future, creating a conducive environment for stakeholders and generations.</p>
-    </article>
-  </div>
-</section>
-<!-- PASTE in index.html after the Sustainability cards section from sections2.html
-     and BEFORE <script src="script.js">. Needs hidden gradient id="pg" from sections.html. -->
+<div class="my-5 six-cards col-10 m-auto d-grid justify-content-between gap-4">
+<div class="card py-4">
+<img src="data:image/svg+xml,%3csvg%20width='115'%20height='126'%20viewBox='0%200%20115%20126'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='royalKiddiesIcon'%20clip-path='url(%23clip0_19_369)'%3e%3cg%20id='Parent'%3e%3cpath%20id='Ellipse%20119'%20d='M57.6667%2060.9766C40.8285%2060.9766%2027.1784%2047.3265%2027.1784%2030.4883C27.1784%2013.6501%2040.8285%200%2057.6667%200C74.5049%200%2088.155%2013.6501%2088.155%2030.4883C88.155%2047.3265%2074.5049%2060.9766%2057.6667%2060.9766Z'%20fill='url(%23paint0_linear_19_369)'/%3e%3cpath%20id='Ellipse%20116'%20d='M114.905%20126C114.905%20118.383%20113.428%20110.841%20110.558%20103.804C107.687%2096.7675%20103.48%2090.3736%2098.1757%2084.9878C92.8717%2079.602%2086.5749%2075.3298%2079.6449%2072.415C72.7148%2069.5002%2065.2873%2068%2057.7863%2068C50.2853%2068%2042.8578%2069.5002%2035.9277%2072.415C28.9977%2075.3298%2022.7009%2079.602%2017.3969%2084.9878C12.0929%2090.3736%207.88556%2096.7675%205.01505%20103.804C2.14454%20110.841%200.667114%20118.383%200.667114%20126H34.9386C34.9386%20122.953%2035.5296%20119.936%2036.6778%20117.122C37.826%20114.307%2039.509%20111.749%2041.6306%20109.595C43.7522%20107.441%2046.2709%20105.732%2049.0429%20104.566C51.8149%20103.4%2054.7859%20102.8%2057.7863%20102.8C60.7867%20102.8%2063.7577%20103.4%2066.5297%20104.566C69.3017%20105.732%2071.8204%20107.441%2073.942%20109.595C76.0637%20111.749%2077.7466%20114.307%2078.8948%20117.122C80.043%20119.936%2080.634%20122.953%2080.634%20126H114.905Z'%20fill='url(%23paint1_linear_19_369)'/%3e%3c/g%3e%3cg%20id='Child'%3e%3cpath%20id='Ellipse%20115'%20d='M57.6678%2086.1627C46.6863%2086.1627%2037.7841%2077.2605%2037.7841%2066.279C37.7841%2055.2975%2046.6863%2046.3953%2057.6678%2046.3953C68.6493%2046.3953%2077.5515%2055.2975%2077.5515%2066.279C77.5515%2077.2605%2068.6493%2086.1627%2057.6678%2086.1627Z'%20fill='%23D9D9D9'/%3e%3cpath%20id='Ellipse%20117'%20d='M91.6671%20126C91.6671%20121.141%2090.7618%20116.33%2089.0029%20111.841C87.244%20107.352%2084.6659%20103.273%2081.4159%2099.837C78.1658%2096.4013%2074.3074%2093.6759%2070.061%2091.8165C65.8146%2089.957%2061.2634%2089%2056.6671%2089C52.0708%2089%2047.5196%2089.957%2043.2732%2091.8165C39.0268%2093.6759%2035.1684%2096.4013%2031.9184%2099.8371C28.6683%20103.273%2026.0902%20107.352%2024.3313%20111.841C22.5724%20116.33%2021.6671%20121.141%2021.6671%20126H91.6671Z'%20fill='url(%23paint2_linear_19_369)'/%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_19_369'%20x1='57.6667'%20y1='0'%20x2='57.6667'%20y2='60.9766'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23ECECEC'/%3e%3cstop%20offset='1'%20stop-color='%23A7A7A7'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_19_369'%20x1='66.9461'%20y1='115.118'%20x2='36.9163'%20y2='41.8026'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23981D87'/%3e%3cstop%20offset='1'%20stop-color='%23E93DD0'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint2_linear_19_369'%20x1='21.6671'%20y1='93.3359'%20x2='45.4005'%20y2='142.123'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFBAF5'/%3e%3cstop%20offset='0.986917'%20stop-color='%23D73BC2'/%3e%3c/linearGradient%3e%3cclipPath%20id='clip0_19_369'%3e%3crect%20width='115'%20height='126'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" class="card-img-top" alt="..." height="100">
+<div class="card-body mt-2">
+<h5 class="card-title">Personal Banking</h5>
+<p class="card-text">At Wema Bank, We offer a comprehensive range of personal banking products and services to meet your financial needs.</p>
+<a href="#" class="text-decoration-none text-dark">Get started<i class="bi bi-arrow-right-short"></i></a>
+</div>
+</div>
+<div class="card py-4">
+<img src="https://wemabank.com/assets/businessBankingIcon-_DkoGwIs.svg" class="card-img-top" alt="..." height="90">
+<div class="card-body mt-2">
+<h5 class="card-title">Business Banking</h5>
+<p class="card-text">We empower businesses with a comprehensive range of financial solutions, including loans, investments, and convenient online banking tools, to help them...</p>
+<a href="#" class="text-decoration-none text-dark">Get started<i class="bi bi-arrow-right-short"></i></a>
+</div>
+</div>
+<div class="card py-4">
+<img src="data:image/svg+xml,%3csvg%20width='115'%20height='126'%20viewBox='0%200%20115%20126'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='royalKiddiesIcon'%20clip-path='url(%23clip0_19_369)'%3e%3cg%20id='Parent'%3e%3cpath%20id='Ellipse%20119'%20d='M57.6667%2060.9766C40.8285%2060.9766%2027.1784%2047.3265%2027.1784%2030.4883C27.1784%2013.6501%2040.8285%200%2057.6667%200C74.5049%200%2088.155%2013.6501%2088.155%2030.4883C88.155%2047.3265%2074.5049%2060.9766%2057.6667%2060.9766Z'%20fill='url(%23paint0_linear_19_369)'/%3e%3cpath%20id='Ellipse%20116'%20d='M114.905%20126C114.905%20118.383%20113.428%20110.841%20110.558%20103.804C107.687%2096.7675%20103.48%2090.3736%2098.1757%2084.9878C92.8717%2079.602%2086.5749%2075.3298%2079.6449%2072.415C72.7148%2069.5002%2065.2873%2068%2057.7863%2068C50.2853%2068%2042.8578%2069.5002%2035.9277%2072.415C28.9977%2075.3298%2022.7009%2079.602%2017.3969%2084.9878C12.0929%2090.3736%207.88556%2096.7675%205.01505%20103.804C2.14454%20110.841%200.667114%20118.383%200.667114%20126H34.9386C34.9386%20122.953%2035.5296%20119.936%2036.6778%20117.122C37.826%20114.307%2039.509%20111.749%2041.6306%20109.595C43.7522%20107.441%2046.2709%20105.732%2049.0429%20104.566C51.8149%20103.4%2054.7859%20102.8%2057.7863%20102.8C60.7867%20102.8%2063.7577%20103.4%2066.5297%20104.566C69.3017%20105.732%2071.8204%20107.441%2073.942%20109.595C76.0637%20111.749%2077.7466%20114.307%2078.8948%20117.122C80.043%20119.936%2080.634%20122.953%2080.634%20126H114.905Z'%20fill='url(%23paint1_linear_19_369)'/%3e%3c/g%3e%3cg%20id='Child'%3e%3cpath%20id='Ellipse%20115'%20d='M57.6678%2086.1627C46.6863%2086.1627%2037.7841%2077.2605%2037.7841%2066.279C37.7841%2055.2975%2046.6863%2046.3953%2057.6678%2046.3953C68.6493%2046.3953%2077.5515%2055.2975%2077.5515%2066.279C77.5515%2077.2605%2068.6493%2086.1627%2057.6678%2086.1627Z'%20fill='%23D9D9D9'/%3e%3cpath%20id='Ellipse%20117'%20d='M91.6671%20126C91.6671%20121.141%2090.7618%20116.33%2089.0029%20111.841C87.244%20107.352%2084.6659%20103.273%2081.4159%2099.837C78.1658%2096.4013%2074.3074%2093.6759%2070.061%2091.8165C65.8146%2089.957%2061.2634%2089%2056.6671%2089C52.0708%2089%2047.5196%2089.957%2043.2732%2091.8165C39.0268%2093.6759%2035.1684%2096.4013%2031.9184%2099.8371C28.6683%20103.273%2026.0902%20107.352%2024.3313%20111.841C22.5724%20116.33%2021.6671%20121.141%2021.6671%20126H91.6671Z'%20fill='url(%23paint2_linear_19_369)'/%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_19_369'%20x1='57.6667'%20y1='0'%20x2='57.6667'%20y2='60.9766'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23ECECEC'/%3e%3cstop%20offset='1'%20stop-color='%23A7A7A7'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_19_369'%20x1='66.9461'%20y1='115.118'%20x2='36.9163'%20y2='41.8026'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23981D87'/%3e%3cstop%20offset='1'%20stop-color='%23E93DD0'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint2_linear_19_369'%20x1='21.6671'%20y1='93.3359'%20x2='45.4005'%20y2='142.123'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFBAF5'/%3e%3cstop%20offset='0.986917'%20stop-color='%23D73BC2'/%3e%3c/linearGradient%3e%3cclipPath%20id='clip0_19_369'%3e%3crect%20width='115'%20height='126'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" class="card-img-top" alt="..." height="100">
+<div class="card-body mt-2">
+<h5 class="card-title">Corporate Banking</h5>
+<p class="card-text">Our expertise in trade finance and global network also enable businesses to expand beyond borders and reach new...</p>
+<a href="#" class="text-decoration-none text-dark">Get started<i class="bi bi-arrow-right-short"></i></a>
+</div>
+</div>
+<div class="card py-4">
+<img src="https://wemabank.com/assets/loansIcon-YQ1baKiw.svg" class="card-img-top" alt="..." height="100">
+<div class="card-body mt-2">
+<h5 class="card-title">Loans</h5>
+<p class="card-text">Unlock your financial potential with Wema Bank's extensive range of consumer and business loans. Our...</p>
+<a href="#" class="text-decoration-none text-dark">Get started<i class="bi bi-arrow-right-short"></i></a>
+</div>
+</div>
+<div class="card py-4">
+<img src="data:image/svg+xml,%3csvg%20width='115'%20height='126'%20viewBox='0%200%20115%20126'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='royalKiddiesIcon'%20clip-path='url(%23clip0_19_369)'%3e%3cg%20id='Parent'%3e%3cpath%20id='Ellipse%20119'%20d='M57.6667%2060.9766C40.8285%2060.9766%2027.1784%2047.3265%2027.1784%2030.4883C27.1784%2013.6501%2040.8285%200%2057.6667%200C74.5049%200%2088.155%2013.6501%2088.155%2030.4883C88.155%2047.3265%2074.5049%2060.9766%2057.6667%2060.9766Z'%20fill='url(%23paint0_linear_19_369)'/%3e%3cpath%20id='Ellipse%20116'%20d='M114.905%20126C114.905%20118.383%20113.428%20110.841%20110.558%20103.804C107.687%2096.7675%20103.48%2090.3736%2098.1757%2084.9878C92.8717%2079.602%2086.5749%2075.3298%2079.6449%2072.415C72.7148%2069.5002%2065.2873%2068%2057.7863%2068C50.2853%2068%2042.8578%2069.5002%2035.9277%2072.415C28.9977%2075.3298%2022.7009%2079.602%2017.3969%2084.9878C12.0929%2090.3736%207.88556%2096.7675%205.01505%20103.804C2.14454%20110.841%200.667114%20118.383%200.667114%20126H34.9386C34.9386%20122.953%2035.5296%20119.936%2036.6778%20117.122C37.826%20114.307%2039.509%20111.749%2041.6306%20109.595C43.7522%20107.441%2046.2709%20105.732%2049.0429%20104.566C51.8149%20103.4%2054.7859%20102.8%2057.7863%20102.8C60.7867%20102.8%2063.7577%20103.4%2066.5297%20104.566C69.3017%20105.732%2071.8204%20107.441%2073.942%20109.595C76.0637%20111.749%2077.7466%20114.307%2078.8948%20117.122C80.043%20119.936%2080.634%20122.953%2080.634%20126H114.905Z'%20fill='url(%23paint1_linear_19_369)'/%3e%3c/g%3e%3cg%20id='Child'%3e%3cpath%20id='Ellipse%20115'%20d='M57.6678%2086.1627C46.6863%2086.1627%2037.7841%2077.2605%2037.7841%2066.279C37.7841%2055.2975%2046.6863%2046.3953%2057.6678%2046.3953C68.6493%2046.3953%2077.5515%2055.2975%2077.5515%2066.279C77.5515%2077.2605%2068.6493%2086.1627%2057.6678%2086.1627Z'%20fill='%23D9D9D9'/%3e%3cpath%20id='Ellipse%20117'%20d='M91.6671%20126C91.6671%20121.141%2090.7618%20116.33%2089.0029%20111.841C87.244%20107.352%2084.6659%20103.273%2081.4159%2099.837C78.1658%2096.4013%2074.3074%2093.6759%2070.061%2091.8165C65.8146%2089.957%2061.2634%2089%2056.6671%2089C52.0708%2089%2047.5196%2089.957%2043.2732%2091.8165C39.0268%2093.6759%2035.1684%2096.4013%2031.9184%2099.8371C28.6683%20103.273%2026.0902%20107.352%2024.3313%20111.841C22.5724%20116.33%2021.6671%20121.141%2021.6671%20126H91.6671Z'%20fill='url(%23paint2_linear_19_369)'/%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_19_369'%20x1='57.6667'%20y1='0'%20x2='57.6667'%20y2='60.9766'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23ECECEC'/%3e%3cstop%20offset='1'%20stop-color='%23A7A7A7'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_19_369'%20x1='66.9461'%20y1='115.118'%20x2='36.9163'%20y2='41.8026'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23981D87'/%3e%3cstop%20offset='1'%20stop-color='%23E93DD0'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint2_linear_19_369'%20x1='21.6671'%20y1='93.3359'%20x2='45.4005'%20y2='142.123'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFBAF5'/%3e%3cstop%20offset='0.986917'%20stop-color='%23D73BC2'/%3e%3c/linearGradient%3e%3cclipPath%20id='clip0_19_369'%3e%3crect%20width='115'%20height='126'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" class="card-img-top" alt="..." height="100"" >
+<div class="card-body mt-2">
+<h5 class="card-title">Royal Kiddies</h5>
+<p class="card-text">Our bespoke children's savings account designed to encourage saving and financial prudence from a young age...</p>
+<a href="#" class="text-decoration-none text-dark">Get started<i class="bi bi-arrow-right-short"></i></a>
+</div>
+</div>
+<div class="card py-4">
+<img src="https://wemabank.com/assets/loansIcon-YQ1baKiw.svg" class="card-img-top" alt="..." height="100">
+<div class="card-body mt-2">
+<h5 class="card-title">E-Banking</h5>
+<p class="card-text">We offer a comprehensive E-banking platform, ALAT, providing a range of convenient and secure ways to manage...</p>
+<a href="#" class="text-decoration-none text-dark">Get started<i class="bi bi-arrow-right-short"></i></a>
+</div>
+</div>
+</div>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-apple" viewBox="0 0 24 24"><path fill="currentColor" d="M16.4 1.4c0 1.1-.5 2.1-1.2 2.9-.8.8-2.1 1.5-3.1 1.4-.1-1.1.4-2.3 1.2-3 .8-.8 2.1-1.4 3.1-1.3zM20.5 17.3c-.6 1.3-.9 1.9-1.6 3.1-1 1.6-2.5 3.7-4.3 3.7-1.6 0-2-1-4.2-1-2.2 0-2.7 1-4.3 1-1.8 0-3.2-1.9-4.3-3.5C-.7 16.1-1 10.4 1.2 7.4c1.2-1.7 2.9-2.7 4.5-2.7 1.7 0 2.7 1.1 4.1 1.1 1.3 0 2.1-1.1 4.1-1.1 1.4 0 3 .8 4 2.1-3.5 1.9-3 7 .6 8.5z"/></symbol>
-  <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M3 2.6c-.4.3-.6.7-.6 1.2v16.4c0 .5.2.9.6 1.2l9.4-9.4zM15.8 9.3l-2.7-1.5L9.9 12l3.2 4.2 2.7-1.5c1.3-.7 1.3-3.7 0-4.4z"/></symbol>
-</svg>
 
-<!-- ============ TESTIMONIALS ============ -->
-<section class="band band--tight2">
-  <div class="wrap">
-    <p class="eyebrow">Testimonial</p>
-    <h2 class="sec-title">What Customers Say</h2>
-    <div class="testi">
-      <article class="testi__card"><p>&ldquo;I&rsquo;m grateful for the opportunity; it's not just about the grant, but the potential impact. Almost gave up on my business, but this boost will make a difference.&rdquo;.</p><h3>Loveth Ugwu</h3></article>
-      <article class="testi__card"><p>&ldquo;I&rsquo;m grateful to wema bank for the impact in the Gen Z's, the sound of ALAT competition has given me a greater platform in the music industry&rdquo;.</p><h3>Kareem olatomiwa</h3></article>
-      <article class="testi__card"><p>&ldquo;Thank you immensely from my heart, this vote of support and confidence in my business &lsquo;Jute&rsquo;Ally&rsquo; fuels my determination to bring it to life&rdquo;.</p><h3>Hibaatullahi Adeniyi</h3></article>
-      <article class="testi__card"><p>&ldquo;Thank you Wema Bank for this opportunity. With this grant it serves as a boost to pursue my business goals&rdquo;.</p><h3>Peace Edwins</h3></article>
-    </div>
-  </div>
-</section>
+<div class="SME-partner my-5">
+<div class="col-10 d-grid justify-content-between align-items-center m-auto">
+<div>
+<img src="https://wemabank.com/assets/smeimg-tuUXOvA2.jpg" alt="">
+</div>
 
-<!-- ============ DOWNLOAD ALAT ============ -->
-<section class="app tex">
-  <div class="app__toggle">
-    <span>Personal Banking</span>
-    <button type="button" class="switch" aria-label="Switch between personal and business banking"><i></i></button>
-    <span class="dim">Business Banking</span>
-  </div>
-  <p class="app__cta">Do you have ALAT? Download Now</p>
+<div class="pt-3/">
+<img src="https://wemabank.com/assets/businessBankingIcon-_DkoGwIs.svg" alt="" height="40">
+<p class="SME-partner-purple my-4">SME Banking</p>
+<h4 class="fw-bold my-4">Your Strategic SME Partner</h4>
+<p class="SME-partner-grey my-4">Elevate your Enterprise to new heights with a strategic partner. From strategic insights to cutting-edge tools, we are dedicated to propelling your business forward. Let's venture together towards success!</p>
+<button class="btn rounded-5 p-3 px-5 mt-2">Learn more<i class="bi bi-arrow-right-short"></i></button>
+</div>
+</div>
 
-  <svg class="app__deco app__deco--burst" viewBox="0 0 94 113" width="94" height="113" aria-hidden="true"><path d="M46.3 25.4 41.5 1M54.7 19l3.1-12.3M54.7 80.3 61.2 112M46.3 90 44.2 103.3M74.2 41.7 93 31.9M22.3 41.7 1 28.4M13 46.6H3M27 71.1 8.8 86.3M76.3 66.2l14.5 7.3M49 41.7l15.3-13.3-4.6 20.8 18.4 5.2-18.4 5.2 4.6 14-13.8-7.3-13.3 18.1 1.6-21.6L13 58.2l21.8-9-4.2-19.7z" fill="none" stroke="#AD1E9B" stroke-width="3"/></svg>
-  <svg class="app__deco app__deco--swoosh" viewBox="0 0 122 111" width="122" height="111" aria-hidden="true"><path d="M119.9 16.5S33.3 59.6 57.8 86.6c16.4 18 61.9 6.2 61.9 6.2L1.4 157.3M119.9 16.5 75.4 1.6M119.9 16.5 105 61.3" fill="none" stroke="#AD1E9B" stroke-width="3"/></svg>
-  <svg class="app__deco app__deco--plane" viewBox="0 0 109 77" width="109" height="77" aria-hidden="true"><path d="M107 3 6 33.4l28.4 8.7M107 3 34.4 42.1M107 3 94.7 64.7l-35-13M107 3 53.4 49.4M34.4 42.1 40.8 73M53.4 49.4 40.8 73M53.4 49.4l6.4 2.3M40.8 73l19-21.3" fill="none" stroke="#AD1E9B" stroke-width="3"/></svg>
+</div>
 
-  <div class="app__grid">
-    <div class="app__left">
-      <a href="#" class="store"><svg width="22" height="22"><use href="#i-apple"/></svg><span><small>Download on the</small>App Store</span></a>
-      <a href="#" class="store"><svg width="22" height="22"><use href="#i-play"/></svg><span><small>GET IT ON</small>Google Play</span></a>
-    </div>
-    <img class="app__phone" src="https://wemabank.com/assets/alatpersonal-unpi1I04.png" alt="ALAT personal banking app">
-    <div class="app__right">
-      <div class="app__bar"><i></i></div>
-      <p>Simple, Easy and Convenient</p>
-      <a href="#" class="btn-outline">Learn More</a>
-    </div>
-  </div>
-</section>
+<div class="three-cards1 d-grid col-10 justify-content-between m-auto my-5">
+<div class="card">
+<img src="https://wemabank.com/assets/businessBankingIcon-_DkoGwIs.svg" alt="" height="30" class="ms-3">
+<div class="card-body">
+<h5 class="card-title fw-bold">Wema POS</h5>
+<p class="card-text">Your partner in seamless and secure POS experiences that ensure client satisfaction and seamless payment processing.</p>
+</div>
+</div>
+<div class="card">
+<img src="data:image/svg+xml,%3csvg%20width='57'%20height='56'%20viewBox='0%200%2057%2056'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Mobile%20Banking'%3e%3cg%20id='Group%201000005038'%3e%3cpath%20id='Rectangle%204337'%20d='M19.1%2011.6C19.1%2010.7163%2019.8163%2010%2020.7%2010H35.9C36.7836%2010%2037.5%2010.7163%2037.5%2011.6V44.4C37.5%2045.2837%2036.7836%2046%2035.9%2046H20.7C19.8163%2046%2019.1%2045.2837%2019.1%2044.4V11.6Z'%20fill='url(%23paint0_linear_1164_10751)'/%3e%3cpath%20id='Rectangle%204338'%20d='M19.9014%2012.4005H36.7011V41.2001H19.9014V12.4005Z'%20fill='%23FDD1FC'/%3e%3crect%20id='Rectangle%20531'%20x='26.7023'%20y='11.2003'%20width='2.79926'%20height='0.399895'%20rx='0.199947'%20fill='%23741B66'/%3e%3cellipse%20id='Ellipse%20118'%20cx='28.3009'%20cy='43.6015'%20rx='1.19968'%20ry='1.19968'%20fill='%234D0542'/%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_1164_10751'%20x1='19.1'%20y1='14.2187'%20x2='44.0154'%20y2='28.0553'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFBAF5'/%3e%3cstop%20offset='0.986917'%20stop-color='%23D73BC2'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="" class="ms-3" height="30">
+<div class="card-body">
+<h5 class="card-title fw-bold">*945#</h5>
+<p class="card-text">Our USSD Code offers a convenient and accessible way to manage your finances on your mobile phone without needing internet access.</p>
+</div>
+</div>
+<div class="card">
+<img src="https://wemabank.com/assets/coin-azG3PYTK.svg" alt="" class="ms-3" height="30">
+<div class="card-body">
+<h5 class="card-title fw-bold">SME Loans</h5>
+<p class="card-text">We offer a variety of SME loan options to help your business grow, each with its own advantages and requirements.</p>
+</div>
+</div>
+</div>
 
-<!-- ============ BLOG ============ -->
-<section class="band band--soft band--blog">
-  <div class="wrap">
-    <p class="eyebrow">Blog</p>
-    <h2 class="sec-title">Announcements &amp; Articles</h2>
 
-    <article class="post post--feature">
-      <img src="https://wemaprodstorage.blob.core.windows.net/blogs/639204169887783782_Media_(1).jpg" alt="Wema Bank and Duplo partnership signing">
-      <div>
-        <p class="post__meta"><span class="tag">Article</span><time>July 23, 2026</time></p>
-        <h3>Wema Bank Partners Duplo to Digitize Financial Operations for Nigerian Businesses</h3>
-        <p class="post__text">Wema Bank, Nigeria's oldest indigenous national bank and pioneer of Africa's first fully digital bank, ALAT, has announced an exclusive partnership with Duplo, a leading financial operations platform for African businesses. The partnership will deliver an integrated financial management solution that helps Nigerian businesses simplify operations, strengthen financial control and scale more efficiently.</p>
-        <a href="#" class="btn-ghost">Read More <span>&rarr;</span></a>
-      </div>
-    </article>
+<div class="animation-atm my-5">
+<div class="col-10 d-grid justify-content-between align-items-center m-auto gap-5">
+<div>
+<img src="data:image/svg+xml,%3csvg%20width='45'%20height='34'%20viewBox='0%200%2045%2034'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Group%201000005014'%3e%3cg%20id='Group%201000004971'%3e%3crect%20id='Rectangle%20491'%20y='0.206543'%20width='32.9348'%20height='19.8913'%20rx='3'%20fill='url(%23paint0_linear_1164_11393)'/%3e%3crect%20id='Rectangle%20492'%20y='4.11963'%20width='32.9348'%20height='4.8913'%20fill='url(%23paint1_linear_1164_11393)'/%3e%3crect%20id='Rectangle%20493'%20x='2.93481'%20y='13.5762'%20width='9.13043'%20height='0.652174'%20rx='0.326087'%20fill='%23FFE8FF'/%3e%3crect%20id='Rectangle%20494'%20x='2.93481'%20y='14.8804'%20width='9.13043'%20height='0.652174'%20rx='0.326087'%20fill='%23FFE8FF'/%3e%3crect%20id='Rectangle%20495'%20x='21.8478'%20y='13.5762'%20width='7.5'%20height='3.26087'%20rx='1.63043'%20fill='%23FDD1FC'/%3e%3c/g%3e%3cg%20id='Group%201000004990'%3e%3crect%20id='Rectangle%20491_2'%20x='12.066'%20y='13.9023'%20width='32.9348'%20height='19.8913'%20rx='3'%20fill='url(%23paint2_linear_1164_11393)'/%3e%3crect%20id='Rectangle%20492_2'%20x='12.066'%20y='17.8154'%20width='32.9348'%20height='4.8913'%20fill='url(%23paint3_linear_1164_11393)'/%3e%3crect%20id='Rectangle%20493_2'%20x='15.0009'%20y='27.272'%20width='9.13043'%20height='0.652174'%20rx='0.326087'%20fill='%23FFE8FF'/%3e%3crect%20id='Rectangle%20494_2'%20x='15.0009'%20y='28.5762'%20width='9.13043'%20height='0.652174'%20rx='0.326087'%20fill='%23FFE8FF'/%3e%3crect%20id='Rectangle%20495_2'%20x='33.9138'%20y='27.272'%20width='7.5'%20height='3.26087'%20rx='1.63043'%20fill='%23FDD1FC'/%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_1164_11393'%20x1='16.4674'%20y1='0.206543'%20x2='16.4674'%20y2='20.0978'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23981D87'/%3e%3cstop%20offset='1'%20stop-color='%23AF469F'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_1164_11393'%20x1='32.9348'%20y1='5.0979'%20x2='-0.97826'%20y2='4.77181'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23611261'/%3e%3cstop%20offset='0.0001'%20stop-color='%23AB5DAB'/%3e%3cstop%20offset='0.401042'%20stop-color='%23FFF4FF'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint2_linear_1164_11393'%20x1='12.066'%20y1='16.2334'%20x2='25.8395'%20y2='41.0121'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFBAF5'/%3e%3cstop%20offset='0.986917'%20stop-color='%23D73BC2'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint3_linear_1164_11393'%20x1='45.0008'%20y1='18.7937'%20x2='11.0878'%20y2='18.4676'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23611261'/%3e%3cstop%20offset='0.0001'%20stop-color='%23AB5DAB'/%3e%3cstop%20offset='0.401042'%20stop-color='%23FFF4FF'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="" height="40">
+<p class="animation-atm-purple my-4">Custom Cards</p>
+<h4 class="fw-bold my-4">Experience Individuality in Every Swipe</h4>
+<p class="animation-atm-grey my-4">Make your transactions with our exclusive collection of personalized cards, allowing you to express your unique style and preferences in every financial interaction and transaction you make</p>
+<button class="btn rounded-5 p-3 px-5 mt-2">Learn more<i class="bi bi-arrow-right-short"></i></button>
+</div>
 
-    <div class="post-grid">
-      <article class="post post--card">
-        <img src="https://wemaprodstorage.blob.core.windows.net/blogs/639186693350462914_IMG-20260703-WA0011.jpg" alt="">
-        <p class="post__meta"><span class="tag">Press Release</span><time>July 3, 2026</time></p>
-        <h3>Wema Bank Announces the 7th Edition of Hackaholics &hellip;Introduces 3 tracks, 7 Verticals, millions of naira in grant prizes</h3>
-        <p class="post__text">Wema Bank, Nigeria's oldest indigenous national bank, most innovative and pioneer of Africa's first fully digital bank, has announced the 7th edition of Hackaholics.</p>
-        <a href="#" class="btn-ghost">Read More <span>&rarr;</span></a>
-      </article>
-      <article class="post post--card">
-        <img src="https://wemaprodstorage.blob.core.windows.net/blogs/639186695988593307_Updated..png" alt="">
-        <p class="post__meta"><span class="tag">Article</span><time>July 3, 2026</time></p>
-        <h3>Wema Bank Announces First Pitch Centre for Hackaholics 7.0</h3>
-        <p class="post__text">Following the official announcement of the 7th edition of Hackaholics, Wema Bank has announced University of Yaba as the first pitch centre.</p>
-        <a href="#" class="btn-ghost">Read More <span>&rarr;</span></a>
-      </article>
-      <article class="post post--card">
-        <img src="https://wemaprodstorage.blob.core.windows.net/blogs/639181519971544573_Wema_Bank_SMEs.jpeg" alt="">
-        <p class="post__meta"><span class="tag">Press Release</span><time>June 27, 2026</time></p>
-        <h3>Wema Bank Deepens Commitment to Nigeria's Entrepreneurs as it Marks World MSME Day&hellip;</h3>
-        <p class="post__text">As the world commemorates World MSME Day 2026, Wema Bank has reaffirmed its commitment to supporting micro, small and medium enterprises.</p>
-        <a href="#" class="btn-ghost">Read More <span>&rarr;</span></a>
-      </article>
-    </div>
-  </div>
-</section>
+<div>
+<img src="https://wemabank.com/assets/card_gif-zaOYJUr6.gif" alt="">
+</div>
+</div>
+</div>
 
-<!-- ============ VIDEO ============ -->
-<section class="band band--video">
-  <div class="wrap">
-    <p class="eyebrow">Video</p>
-    <h2 class="sec-title">Building for the future</h2>
-    <div class="video">
-      <!-- To use your real video, delete the .video__fake div and add:
-           <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe> -->
-      <div class="video__fake">
-        <div class="yt"><svg viewBox="0 0 50 36" width="50" height="36"><rect width="50" height="36" rx="10" fill="#f03"/><path d="M20 10v16l14-8z" fill="#fff"/></svg><b>YouTube</b></div>
-        <h4>This video is private</h4>
-        <p>If the owner of this video has granted you access, please sign in.</p>
-        <a href="#">Sign in</a>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ============ NEWSLETTER ============ -->
-<section class="news-band tex">
-  <div class="news-card">
-    <svg viewBox="0 0 58 38" width="58" height="38" aria-hidden="true"><rect width="58" height="38" fill="url(#pg)"/><path d="M0 0h58L29 22z" fill="#741b66"/></svg>
-    <div class="news-card__text">
-      <h3>Subscribe to our newsletter</h3>
-      <p>Get monthly email updates about the improvements and roadmaps that might change.</p>
-    </div>
-    <div class="news-card__form">
-      <input type="email" placeholder="Enter your email" aria-label="Email address">
-      <button type="button" class="btn-pill btn-pill--solid">Learn More <span>&rarr;</span></button>
-    </div>
-  </div>
-</section>
+<div class="ALATPay my-5">
+<div class="col-10 d-grid justify-content-between align-items-center m-auto">
+<div>
+<img src="https://wemabank.com/assets/DavidoXALAT-AiNisVAC.png" alt="">
+</div>
 
-<!-- ============ FOOTER ============ -->
-<footer class="footer tex">
-  <div class="footer__grid">
-    <div class="footer__brand">
-      <img src="https://wemabank.com/assets/wemaFullWhite-Xh_jya1z.svg" alt="Wema Bank" class="footer__logo">
-      <p class="footer__cbn">Licensed by CBN <span class="seal"></span></p>
-      <div class="social">
-        <a href="#" aria-label="Facebook">f</a><a href="#" aria-label="X">&#120143;</a><a href="#" aria-label="Instagram">&#9678;</a><a href="#" aria-label="LinkedIn">in</a>
-      </div>
-      <div class="footer__app">
-        <p>Get ALAT app on</p>
-        <a href="#" class="store"><svg width="22" height="22"><use href="#i-apple"/></svg><span><small>Download on the</small>App Store</span></a>
-        <a href="#" class="store"><svg width="22" height="22"><use href="#i-play"/></svg><span><small>GET IT ON</small>Google Play</span></a>
-      </div>
-      <p class="footer__copy">Wema Bank. All Rights Reserved.</p>
-    </div>
+<div class="mt-sm-5">
+<img src="https://wemabank.com/assets/coin2-oxd8k7oh.svg" alt="" height="40">
+<p class=""ALATPay-purple my-4">ALATPay</p>
+<h4 class="fw-bold my-4">Your Gateway to Uninterrupted Growth</h4>
+<p class="ALATPay-grey my-4">ALATpay lets businesses collect payments easily from customers via several methods: cards (local and international), bank transfers, phone, NQR, and a dedicated online storefront for displaying and selling products. It's a one-stop platform for seamless digital payments.</p>
+<button class="btn rounded-5 p-3 px-5 mt-2">Learn more<i class="bi bi-arrow-right-short"></i></button>
+</div>
+</div>
 
-    <nav><h4>Useful Links</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Account ReUp</a></li><li><a href="#">ALAT</a></li><li><a href="#">Business Banking</a></li><li><a href="#">Contact Us</a></li><li><a href="#">Hackaholics</a></li><li><a href="#">Personal Banking</a></li><li><a href="#">Sara</a></li><li><a href="#">Whistle Blower</a></li></ul></nav>
-    <nav><h4>Help &amp; Security</h4><ul><li><a href="#">Bank Safely</a></li><li><a href="#">Business Continuity Policy Statement</a></li><li><a href="#">Card Control</a></li><li><a href="#">Features and Services Offered</a></li><li><a href="#">Information Security</a></li><li><a href="#">Secure your card</a></li><li><a href="#">Shop Safely Online</a></li><li><a href="#">Whistleblowing Policy</a></li></ul></nav>
-    <nav><h4>Policies</h4><ul><li><a href="#">Anti-bribery and Corruption Policy</a></li><li><a href="#">AML/CFT/CPF Policy</a></li><li><a href="#">Cybercrime Prohibition &amp; Prevention Policy</a></li><li><a href="#">Data Protection Policy (NDPA)</a></li><li><a href="#">Fraud Management Policy</a></li><li><a href="#">Information Security Policy</a></li><li><a href="#">Occupational Health and Safety Policy</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Risk Management Policy</a></li><li><a href="#">Sanctions Policy</a></li><li><a href="#">Service Management Policy</a></li></ul></nav>
+</div>
 
-    <nav><h4>Self Service</h4><ul><li><a href="#">Accessibility</a></li><li><a href="#">Agents</a></li><li><a href="#">ATM's</a></li><li><a href="#">Branches</a></li><li><a href="#">BVN Enrollment</a></li><li><a href="#">Help &amp; Support</a></li></ul></nav>
-    <nav><h4>Financial Information</h4><ul><li><a href="#">Annual Audited Financial Statements</a></li><li><a href="#">Governance and Reporting</a></li><li><a href="#">Insider Trading Policy</a></li><li><a href="#">Rating Report</a></li><li><a href="#">Shareholder Information</a></li></ul></nav>
-    <nav><h4>Contact</h4><ul><li>+234-803-900-3700</li><li>+234-01-277-7700-9</li><li>purpleconnect@wemabank.com</li><li>54 Marina, Lagos Island Lagos State Nigeria</li></ul></nav>
-  </div>
-</footer>
-<p class="legal">Wema Bank Plc. Licensed by the Central Bank of Nigeria.</p>
 
-  <script src="script.js"></script>
+<div class="purple-background1">
+<div class="investor-relations col-10 m-auto d-grid justify-content-between gap-5">
+<div>
+<p class="small-grey">Investor Relations</p>
+<h2 class="text-light pb-3">Explore the Latest Stories Shaping Our Financial Landscape</h2>
+<p class="small-grey">Be informed about our initiatives, partnerships, and the groundbreaking strides we're making in shaping the future of finance and banking.</p>
+<div class="loading d-grid justify-content-between gap-5">
+<div>
+<h3 class="purple">2026-10-07</h3>
+<p class="small-grey">Trade Date</p>
+<h3 class="purple">loading...</h3>
+<p class="small-grey">Change</p>
+</div>
 
-</body>
-</html>
+<div>
+<h3 class="purple">loading...</h3>
+<p class="small-grey">Last</p>
+<h3 class="purple">BBB</h3>
+<p class="small-grey">Our Rating</p>
+</div>
+</div>
+</div>
+<img src="https://wemabank.com/assets/investor_img-cbcYPP_A.jpg" alt="" height="400">
+</div>
+
+<div class="three-cards2 d-grid col-10 justify-content-between m-auto my-5">
+<div class="card">
+<div class="card-body">
+<h5 class="card-title fw-bold">Our Share Price</h5>
+<p class="card-text">Track the rhythm of our stock through real-time updates, insightful analysis, and historical trends.</p>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h5 class="card-title fw-bold">Fixed Income & Ratings</h5>
+<p class="card-text">Experience stability and confidence through our Fixed Income alternatives and ratings, a testament to the trust we inspire in the industry.</p>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<h5 class="card-title fw-bold">Events & Presentations</h5>
+<p class="card-text">Join us at our exclusive events where industry experts, thought leaders, and financial professionals converge to share valuable insights.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="business my-5/">
+<div class="col-10 d-grid justify-content-between align-items-center m-auto gap-5">
+<div>
+<img src="data:image/svg+xml,%3csvg%20width='30'%20height='34'%20viewBox='0%200%2030%2034'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Group%201000005012'%3e%3cpath%20id='Rectangle%204305'%20d='M3.30127%2018.4165H25.2596L23.1346%2033.9998H5.78044L3.30127%2018.4165Z'%20fill='url(%23paint0_linear_1164_11662)'/%3e%3cpath%20id='Ellipse%20177'%20d='M15.0676%2010.498C14.1048%2012.3055%208.89005%2011.9554%206.5851%2010.6476C3.22339%209.47621%200.820209%205.69559%201.78305%203.88812C2.74589%202.08065%207.47338%202.03872%2010.3057%203.4556C12.7859%204.51789%2016.0305%208.69051%2015.0676%2010.498Z'%20fill='%23FFE8FF'/%3e%3cpath%20id='Ellipse%20179'%20d='M27.7507%208.83796C26.7879%207.03049%2021.5732%207.38057%2019.2682%208.68835C15.9065%209.85973%2013.5033%2013.6404%2014.4662%2015.4478C15.429%2017.2553%2020.1565%2017.2972%2022.9888%2015.8803C25.469%2014.818%2028.7136%2010.6454%2027.7507%208.83796Z'%20fill='%23FFE8FF'/%3e%3cpath%20id='Union'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M13.2178%201.41666C13.2178%200.634261%2013.8521%200%2014.6345%200C15.4169%200%2016.0512%200.634263%2016.0512%201.41667V10.829C16.9107%209.91289%2018.0236%209.12191%2019.2678%208.68837C21.5728%207.38058%2026.7875%207.0305%2027.7504%208.83797C28.7132%2010.6454%2025.4686%2014.8181%2022.9884%2015.8804C20.9547%2016.8977%2017.9438%2017.163%2016.0512%2016.5625V18.4167H13.2178V11.5806C11.2091%2012.005%208.19073%2011.5587%206.58483%2010.6476C3.22311%209.47621%200.819935%205.69559%201.78277%203.88812C2.74561%202.08065%207.47311%202.03872%2010.3054%203.4556C11.2573%203.86331%2012.3218%204.72918%2013.2178%205.74366V1.41666ZM7.46594%208.7043L7.63348%208.79935C8.37829%209.22195%209.87401%209.59448%2011.3605%209.61623C12.0807%209.62677%2012.6592%209.5511%2013.0413%209.43483L13.0539%209.43094L13.0506%209.42017C12.931%209.03875%2012.6657%208.51717%2012.248%207.93205C11.3794%206.71531%2010.2269%205.73369%209.46877%205.40897L9.41095%205.38421L9.35469%205.35607C8.3103%204.8336%206.78493%204.53746%205.41908%204.58637C4.74627%204.61046%204.22002%204.71529%203.87518%204.84594C3.80036%204.87428%203.74288%204.90025%203.6996%204.92219C3.70443%204.96172%203.71267%205.01109%203.72635%205.07131C3.79636%205.37946%203.97915%205.81386%204.31637%206.30716C4.99968%207.30674%206.09311%208.22594%207.28404%208.64092L7.46594%208.7043ZM3.69534%204.79322L3.69502%204.79513C3.6952%204.79384%203.69532%204.79321%203.69534%204.79322ZM13.1159%209.73042C13.1158%209.73035%2013.1157%209.72747%2013.1161%209.72201C13.1162%209.72775%2013.116%209.73049%2013.1159%209.73042ZM20.3165%2010.5366L20.149%2010.6317L19.9671%2010.695C18.7761%2011.11%2017.6827%2012.0292%2016.9994%2013.0288C16.6622%2013.5221%2016.4794%2013.9565%2016.4094%2014.2646C16.3957%2014.3249%2016.3875%2014.3742%2016.3826%2014.4138C16.4259%2014.4357%2016.4834%2014.4617%2016.5582%2014.49C16.903%2014.6207%2017.4293%2014.7255%2018.1021%2014.7496C19.468%2014.7985%2020.9933%2014.5024%2022.0377%2013.9799L22.094%2013.9517L22.1518%2013.927C22.9099%2013.6023%2024.0624%2012.6206%2024.931%2011.4039C25.3488%2010.8188%2025.614%2010.2972%2025.7336%209.91578L25.737%209.90501L25.7243%209.90113C25.3422%209.78486%2024.7637%209.70918%2024.0435%209.71972C22.557%209.74148%2021.0613%2010.114%2020.3165%2010.5366ZM16.3784%2014.5427L16.378%2014.5408C16.3782%2014.5421%2016.3783%2014.5427%2016.3784%2014.5427ZM25.7989%209.60554C25.7988%209.60561%2025.7987%209.60848%2025.7991%209.61395C25.7993%209.6082%2025.7991%209.60547%2025.7989%209.60554ZM26.0122%2010.0181C26.016%2010.0211%2026.0182%2010.0225%2026.0183%2010.0225C26.0184%2010.0224%2026.0165%2010.0209%2026.0122%2010.0181Z'%20fill='url(%23paint1_linear_1164_11662)'/%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_1164_11662'%20x1='3.30127'%20y1='20.2427'%20x2='14.935'%20y2='38.0543'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFBAF5'/%3e%3cstop%20offset='0.986917'%20stop-color='%23D73BC2'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_1164_11662'%20x1='27.8326'%20y1='16.1146'%20x2='0.34065'%20y2='0.892415'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23981D87'/%3e%3cstop%20offset='0.964828'%20stop-color='%23CE73C1'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="" height="40">
+<p class="business-purple my-4">Sustainability</p>
+<h4 class="fw-bold my-4">Championing Responsible Business for a Sustainable Future</h4>
+<p class="business-grey my-4">We are committed to advancing our sustainability initiatives, emphasizing responsible business practices, environmental stewardship, and fostering shared value for our stakeholders</p>
+<button class="btn rounded-5 p-3 px-5 mt-2">Learn more<i class="bi bi-arrow-right-short"></i></button>
+</div>
+
+
+<div class="d-flex gap-5 align-items-center">
+<div class="d-flex flex-column gap-4 mb-1">
+<div class="">
+<img src="https://wemabank.com/assets/sustainerbility_img_1-ZhLKZPnf.jpg" alt="">
+</div>
+<div>
+<img src="https://wemabank.com/assets/sustainability_img_2-YCWDd2oB.jpg" alt="">
+</div>
+</div>
+
+<div class="d-flex flex-column gap-4 mt-4">
+<div>
+<img src="https://wemabank.com/assets/sustainability_img_3-UKg45R4y.jpg" alt="">
+</div>
+
+<div>
+<img src="https://wemabank.com/assets/sustainerbility_img_4-I1ef5rJb.jpg" alt="">
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="three-cards3 d-grid col-10 justify-content-between m-auto my-5 pb-5">
+<div class="card">
+<img src="data:image/svg+xml,%3csvg%20width='56'%20height='56'%20viewBox='0%200%2056%2056'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Frame%2040891'%3e%3crect%20width='56'%20height='56'%20rx='28'%20fill='%23FFF4FF'/%3e%3cg%20id='Group%201000005009'%3e%3cg%20id='Group%201000004980'%3e%3cg%20id='Group%201000004977'%3e%3ccircle%20id='Ellipse%20115'%20cx='5.27234'%20cy='5.27234'%20r='5.27234'%20transform='matrix(-1%200%200%201%2042.2008%2021.2104)'%20fill='%23BEBEBE'/%3e%3c/g%3e%3cg%20id='Group%201000004979'%3e%3ccircle%20id='Ellipse%20115_2'%20cx='5.27234'%20cy='5.27234'%20r='5.27234'%20transform='matrix(-1%200%200%201%2024.8248%2021.2104)'%20fill='url(%23paint0_linear_1164_11681)'/%3e%3cg%20id='Vector'%3e%3cpath%20d='M46.5267%2042.9998C46.5267%2041.6728%2046.2778%2040.3587%2045.7942%2039.1327C45.3106%2037.9067%2044.6017%2036.7927%2043.7081%2035.8543C42.8145%2034.9159%2041.7537%2034.1716%2040.5861%2033.6637C39.4186%2033.1559%2038.1672%2032.8945%2036.9035%2032.8945C35.6398%2032.8945%2034.3884%2033.1559%2033.2209%2033.6637C32.0533%2034.1716%2030.9925%2034.9159%2030.0989%2035.8543C29.2053%2036.7927%2028.4964%2037.9067%2028.0128%2039.1327C27.5292%2040.3587%2027.2803%2041.6728%2027.2803%2042.9998H33.0542C33.0542%2042.469%2033.1538%2041.9434%2033.3472%2041.4529C33.5407%2040.9625%2033.8242%2040.5169%2034.1816%2040.1416C34.5391%2039.7662%2034.9634%2039.4685%2035.4304%2039.2654C35.8975%2039.0622%2036.398%2038.9577%2036.9035%2038.9577C37.409%2038.9577%2037.9095%2039.0622%2038.3766%2039.2654C38.8436%2039.4685%2039.2679%2039.7662%2039.6254%2040.1416C39.9828%2040.5169%2040.2663%2040.9625%2040.4598%2041.4529C40.6532%2041.9434%2040.7528%2042.469%2040.7528%2042.9998H46.5267Z'%20fill='url(%23paint1_linear_1164_11681)'/%3e%3cpath%20d='M9.89514%2042.9998C9.89514%2041.6728%2010.1441%2040.3587%2010.6277%2039.1327C11.1113%2037.9067%2011.8201%2036.7927%2012.7137%2035.8543C13.6073%2034.9159%2014.6682%2034.1716%2015.8357%2033.6637C17.0033%2033.1559%2018.2546%2032.8945%2019.5184%2032.8945C20.7821%2032.8945%2022.0335%2033.1559%2023.201%2033.6637C24.3686%2034.1716%2025.4294%2034.9159%2026.323%2035.8543C27.2166%2036.7927%2027.9255%2037.9067%2028.4091%2039.1327C28.8927%2040.3587%2029.1416%2041.6728%2029.1416%2042.9998H23.3677C23.3677%2042.469%2023.2681%2041.9434%2023.0746%2041.4529C22.8812%2040.9625%2022.5977%2040.5169%2022.2402%2040.1416C21.8828%2039.7662%2021.4584%2039.4685%2020.9914%2039.2654C20.5244%2039.0622%2020.0239%2038.9577%2019.5184%2038.9577C19.0129%2038.9577%2018.5123%2039.0622%2018.0453%2039.2654C17.5783%2039.4685%2017.1539%2039.7662%2016.7965%2040.1416C16.4391%2040.5169%2016.1555%2040.9625%2015.9621%2041.4529C15.7686%2041.9434%2015.6691%2042.469%2015.6691%2042.9998H9.89514Z'%20fill='url(%23paint2_linear_1164_11681)'/%3e%3c/g%3e%3c/g%3e%3cellipse%20id='Ellipse%20115_3'%20cx='28.9'%20cy='20.2426'%20rx='7.4621'%20ry='7.24263'%20fill='%23D9D9D9'/%3e%3cpath%20id='Ellipse%20116'%20d='M42.42%2043.0002C42.42%2041.1755%2042.0688%2039.3687%2041.3863%2037.6829C40.7039%2035.9971%2039.7037%2034.4654%2038.4428%2033.1751C37.1819%2031.8849%2035.6849%2030.8614%2034.0375%2030.1631C32.39%2029.4649%2030.6242%2029.1055%2028.841%2029.1055C27.0578%2029.1055%2025.2921%2029.4649%2023.6446%2030.1631C21.9971%2030.8614%2020.5002%2031.8849%2019.2393%2033.1751C17.9783%2034.4654%2016.9781%2035.9971%2016.2957%2037.6829C15.6133%2039.3687%2015.2621%2041.1755%2015.2621%2043.0002L42.42%2043.0002Z'%20fill='url(%23paint3_linear_1164_11681)'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_1164_11681'%20x1='-1.84108'%20y1='1.50388'%20x2='6.874'%20y2='8.95387'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20offset='0.0879882'%20stop-color='%238E8E8E'/%3e%3cstop%20offset='1'%20stop-color='%23D9D9D9'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_1164_11681'%20x1='22.3123'%20y1='34.1577'%20x2='9.75617'%20y2='42.7977'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23981D87'/%3e%3cstop%20offset='1'%20stop-color='%23E93DD0'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint2_linear_1164_11681'%20x1='22.3123'%20y1='34.1577'%20x2='9.75617'%20y2='42.7977'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23981D87'/%3e%3cstop%20offset='1'%20stop-color='%23E93DD0'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint3_linear_1164_11681'%20x1='15.2621'%20y1='30.7338'%20x2='23.9945'%20y2='49.2786'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFBAF5'/%3e%3cstop%20offset='0.986917'%20stop-color='%23D73BC2'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="" class="ms-3">
+<div class="card-body">
+<h5 class="card-title fw-bold">Partnerships</h5>
+<p class="card-text">Fostering collaboration for global and corporate goals through a systemic thinking approach.</p>
+</div>
+</div>
+<div class="card">
+<img src="data:image/svg+xml,%3csvg%20width='49'%20height='48'%20viewBox='0%200%2049%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Frame%2040890'%3e%3crect%20x='0.666626'%20width='48'%20height='48'%20rx='24'%20fill='%23FFF4FF'/%3e%3cg%20id='Group%201000005011'%3e%3crect%20id='Rectangle%20499'%20x='11.8326'%20y='11.5'%20width='25'%20height='25'%20fill='white'%20stroke='url(%23paint0_linear_1164_11695)'/%3e%3crect%20id='Rectangle%20500'%20x='14.7999'%20y='15.3335'%20width='10.8333'%20height='1.73333'%20fill='url(%23paint1_linear_1164_11695)'/%3e%3crect%20id='Rectangle%20501'%20x='14.7999'%20y='18.5112'%20width='7.36667'%20height='1.3'%20fill='%23DEDEDE'/%3e%3crect%20id='Rectangle%20502'%20x='14.7999'%20y='24'%20width='5.77778'%20height='1.15556'%20fill='%23DEDEDE'/%3e%3crect%20id='Rectangle%20510'%20x='14.7999'%20y='33.5337'%20width='5.77778'%20height='1.15556'%20fill='%23DEDEDE'/%3e%3crect%20id='Rectangle%20504'%20x='21.4437'%20y='24'%20width='5.77778'%20height='1.15556'%20fill='%23DEDEDE'/%3e%3crect%20id='Rectangle%20506'%20x='28.0876'%20y='24'%20width='5.77778'%20height='1.15556'%20fill='%23DEDEDE'/%3e%3crect%20id='Rectangle%20507'%20x='14.7999'%20y='21.9775'%20width='5.77778'%20height='1.15556'%20fill='%23DEDEDE'/%3e%3crect%20id='Rectangle%20511'%20x='21.4437'%20y='33.5337'%20width='5.77778'%20height='1.15556'%20fill='%23DEDEDE'/%3e%3crect%20id='Rectangle%20512'%20x='28.0876'%20y='33.5337'%20width='5.77778'%20height='1.15556'%20fill='%23DEDEDE'/%3e%3crect%20id='Rectangle%20505'%20x='14.7999'%20y='26.8887'%20width='12.4222'%20height='4.91111'%20fill='%23DEDEDE'/%3e%3crect%20id='Rectangle%20508'%20x='21.4437'%20y='21.9775'%20width='5.77778'%20height='1.15556'%20fill='%23DEDEDE'/%3e%3crect%20id='Rectangle%20509'%20x='28.0876'%20y='21.9775'%20width='5.77778'%20height='1.15556'%20fill='%23DEDEDE'/%3e%3ccircle%20id='Ellipse%20116'%20cx='32.4946'%20cy='15.983'%20r='1.51667'%20fill='%23DB39C4'/%3e%3c/g%3e%3c/g%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_1164_11695'%20x1='37.2425'%20y1='33.75'%20x2='6.42065'%20y2='21.8246'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23981D87'/%3e%3cstop%20offset='0.964828'%20stop-color='%23CE73C1'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_1164_11695'%20x1='14.7999'%20y1='15.5366'%20x2='15.2073'%20y2='18.303'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FFBAF5'/%3e%3cstop%20offset='0.986917'%20stop-color='%23D73BC2'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="" class="ms-3">
+<div class="card-body">
+<h5 class="card-title fw-bold">Governance & Reporting</h5>
+<p class="card-text">Ensuring integrity, accountability and transparency, we communicate and disclose impact consistently to stakeholders</p>
+</div>
+</div>
+<div class="card">
+<img src="data:image/svg+xml,%3csvg%20width='49'%20height='48'%20viewBox='0%200%2049%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='0.333496'%20width='48'%20height='48'%20rx='24'%20fill='%23FFF4FF'/%3e%3cpath%20d='M14.6523%2023.25H34.0273L32.1523%2037H16.8398L14.6523%2023.25Z'%20fill='url(%23paint0_linear_1164_11715)'/%3e%3cpath%20d='M23.4023%208.25C23.4023%207.55964%2023.962%207%2024.6523%207C25.3427%207%2025.9023%207.55964%2025.9023%208.25V23.25H23.4023V8.25Z'%20fill='%23D029BE
